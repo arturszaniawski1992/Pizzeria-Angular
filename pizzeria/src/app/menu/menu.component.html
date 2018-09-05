@@ -1,0 +1,26 @@
+<button class="button" [routerLink]="['/']">STRONA GŁÓWNA</button>
+<button class="button" href="#" (click)="getPizza($event)" >PIZZA</button>
+<button class="button" href="#" (click)="getPasta($event)" >PASTA</button>
+<button class="button" href="#" (click)="getDrinks($event)" >NAPOJE</button>
+<table class="menu">
+  <tr>
+    <td>Id</td>
+    <td>Name</td>
+    <td>Type</td>
+    <td>Description</td>
+    <td>Price</td>
+    <td>Order</td>
+  </tr>
+  <tr *ngFor="let dish of dishes">
+    <td>{{dish.id}}</td>
+    <td>{{dish.name}}</td>
+    <td>{{dish.type}}</td>
+    <td>{{dish.description}}</td>
+    <td>{{dish.price}}</td>
+    <td>
+      <button>+</button>
+    </td>
+  </tr>
+</table>
+
+

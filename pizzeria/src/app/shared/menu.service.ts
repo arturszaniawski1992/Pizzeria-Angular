@@ -14,4 +14,18 @@ export class MenuService {
   getDishes(): Observable<Dish[]> {
     return this.httpclient.get<Dish[]>('http://localhost:3000/dishes');
   }
+
+  getPizza(): Observable<Dish[]> {
+    return this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=pizza');
+  }
+
+  getPasta(): Observable<Dish[]> {
+    return this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=spaghetti');
+  }
+
+  getDrinks(): Observable<Dish[]> {
+    return this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=napoj');
+  }
+
+
 }

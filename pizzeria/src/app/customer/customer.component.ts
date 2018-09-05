@@ -1,7 +1,4 @@
 import {Component, OnInit} from '@angular/core';
-import {HttpClient} from '@angular/common/http';
-import {Dish} from '../shared/dish';
-import {MenuService} from "../shared/menu.service";
 
 @Component({
   selector: 'app-customer',
@@ -10,15 +7,11 @@ import {MenuService} from "../shared/menu.service";
 })
 export class CustomerComponent implements OnInit {
 
-  dishes: Dish[];
 
-  constructor(private readonly menuService: MenuService) {
+  constructor() {
   }
 
   ngOnInit() {
-    this.menuService.getDishes().subscribe(dishes => {
-      this.dishes = dishes;
-    });
   }
 
 }
