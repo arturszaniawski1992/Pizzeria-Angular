@@ -1,35 +1,41 @@
 import {Injectable} from '@angular/core';
 import {Dish} from './dish';
 import {HttpClient} from '@angular/common/http';
-import {Observable} from 'rxjs';
+import {Observable, Subject} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class MenuService {
 
-  constructor(readonly httpclient: HttpClient) {
+  dishes$ = new Subject<Dish[]>();
+
+  constructor(public readonly httpclient: HttpClient
+  ) {}
+
+
+  getDishes(): void {
+    this.httpclient.get<Dish[]>('http://localhost:3000/dishes').subscribe(dishes => this.dishes$.next(dishes));
   }
 
-  getDishes(): Observable<Dish[]> {
-    return this.httpclient.get<Dish[]>('http://localhost:3000/dishes');
+  getPizza(): void {
+    this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=pizza').subscribe(dishes => this.dishes$.next(dishes));
   }
 
-  getPizza(): Observable<Dish[]> {
-    return this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=pizza');
+  getPasta(): void {
+    this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=spaghetti').subscribe(dishes => this.dishes$.next(dishes));
   }
 
-  getPasta(): Observable<Dish[]> {
-    return this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=spaghetti');
-  }
-
-  getDrinks(): Observable<Dish[]> {
-    return this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=napoj');
+  getDrinks(): void {
+    this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=napoj').subscribe(dishes => this.dishes$.next(dishes));
   }
 
   getDish(id: number): Observable<Dish> {
     return this.httpclient.get<Dish>(`http://localhost:3000/dishes/${id}`);
   }
+
+
+
 
 
 

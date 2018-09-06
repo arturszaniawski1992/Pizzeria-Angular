@@ -1,7 +1,8 @@
-import {Component, Input, OnInit, EventEmitter, OnDestroy} from '@angular/core';
-import {Order} from '../shared/order';
+import {Component,  OnInit,  OnDestroy} from '@angular/core';
 import {OrderService} from '../shared/order.service';
 import {Subscription} from 'rxjs';
+import {MenuService} from '../shared/menu.service';
+import {Dish} from '../shared/dish';
 
 @Component({
   selector: 'app-order',
@@ -10,20 +11,22 @@ import {Subscription} from 'rxjs';
 })
 export class OrderComponent implements OnInit, OnDestroy {
 
-  orders: Order[];
+  orders: Dish[];
   sub: Subscription;
 
-  constructor(private readonly orderService: OrderService) {
+  constructor(private readonly orderService: OrderService,
+              private readonly menuService: MenuService,
+  ) {
   }
 
   ngOnInit() {
-    this.orderService.getOrders().subscribe(orders => {
+    this.sub = this.orderService.getOrders().subscribe(orders => {
       this.orders = orders;
     })
   }
 
-
-  ngOnDestroy(): void {
+  ngOnDestroy():
+    void {
     this.sub.unsubscribe();
   }
 

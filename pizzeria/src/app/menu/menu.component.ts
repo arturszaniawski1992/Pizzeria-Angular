@@ -1,7 +1,7 @@
 import {Component, Input, OnDestroy, OnInit, Output} from '@angular/core';
 import {Dish} from '../shared/dish';
 import {MenuService} from '../shared/menu.service';
-import {Subscription} from 'rxjs';
+import {Subject, Subscription} from 'rxjs';
 
 
 @Component({
@@ -11,48 +11,56 @@ import {Subscription} from 'rxjs';
 })
 export class MenuComponent implements OnInit, OnDestroy {
 
+  dishes2$: Subject <Dish[]>;
+
 
   dishes: Dish[];
-  orders: Dish[];
-  sub: Subscription;
-
+  private destroy$: Subject<void> = new Subject<void>();
 
   constructor(private readonly menuService: MenuService) {
   }
 
   ngOnInit() {
-    this.sub = this.menuService.getDishes().subscribe(dishes => {
-      this.dishes = dishes;
-    });
+    //this.menuService.dishes$.subscribe(dishes => this.dishes = dishes);
+    //this.dishes2$ = this.menuService.dishes$;
+    this.menuService.getDishes();
   }
 
   getPizza(event: Event) {
-    this.sub = this.menuService.getPizza().subscribe(dishes => {
+    this.menuService.getPizza().subscribe(dishes => {
       this.dishes = dishes;
     })
   }
 
   getPasta(event: Event) {
-    this.sub = this.menuService.getPasta().subscribe(dishes => {
+    this.menuService.getPasta().subscribe(dishes => {
       this.dishes = dishes;
     })
   }
 
   getDrinks(event: Event) {
-    this.sub = this.menuService.getDrinks().subscribe(dishes => {
+    this.menuService.getDrinks().subscribe(dishes => {
       this.dishes = dishes;
     })
   }
 
-  addToBasket(event: Event){
-    this.sub = this.menuService
-
-
+  addDish(event: Event): void {
+    const dish: Dish = {
+      isAvailable: true,
+      price: 20,
+      name: 'Spaghetti',
+      description: 'nowe danie',
+      type: 'spagetti',
+    };
+    this.menuService.addDish(dish);
   }
 
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
-  }
-
+      this.destroy$.next();
+      this.destroy$.complete();
+    }
 
 }
+
+
+

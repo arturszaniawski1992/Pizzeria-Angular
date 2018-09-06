@@ -1,7 +1,15 @@
 .menu {
   font-family: "Sylfaen", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+  width: 70%;
+  float: right;
+}
+
+.basket {
+  font-family: "Sylfaen", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 30%;
+  float: left;
 }
 
 .menu td, .customers th {
@@ -42,7 +50,7 @@
   font: bold 20px Sylfaen;
   background-color: seashell;
   padding: 2px;
-  transition-duration:1s;
+  transition-duration: 1s;
 
 }
 

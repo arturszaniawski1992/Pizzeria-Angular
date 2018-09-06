@@ -7,10 +7,11 @@
 
 <div class="buttons"></div>
 <br>
-<button class="button" [routerLink]="['/dishes']">MENU</button>
+<button class="button" (click)="navigateToMenu()">MENU</button>
 <button class="button" [routerLink]="['/basket']">KOSZYK</button>
 <button class="button" [routerLink]="['/orders']">ZAMÓWIENIE</button>
 <button class="button" [routerLink]="['/']">STRONA GŁÓWNA</button>
+
 <br>
 
 <div class="text">

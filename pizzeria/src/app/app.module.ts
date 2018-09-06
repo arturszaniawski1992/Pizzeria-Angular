@@ -11,6 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 import { OrderComponent } from './order/order.component';
 import { DishDetailComponent } from './dish-detail/dish-detail.component';
 import { AdministratorComponent } from './administrator/administrator.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { AdministratorComponent } from './administrator/administrator.component'
     MenuComponent,
     OrderComponent,
     DishDetailComponent,
-    AdministratorComponent
+    AdministratorComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

@@ -11,8 +11,8 @@ export class OrderService {
   constructor(readonly httpclient: HttpClient) {
   }
 
-
   getOrders(): Observable<Order[]> {
     return this.httpclient.get<Order[]>('http://localhost:3000/orders');
   }
+
 }

@@ -32,5 +32,4 @@ export class DishDetailComponent implements OnInit, OnDestroy {
     this.sub.unsubscribe();
   }
 
-
 }
