@@ -6,7 +6,7 @@
       "isAvailable": true,
       "description": "Sos, ser",
       "type": "pizza",
-      "price": "22"
+      "price": "22.50"
     },
     {
       "id": 2,
@@ -46,7 +46,7 @@
       "isAvailable": false,
       "description": "Sos boloński",
       "type": "spaghetti",
-      "price": "14"
+      "price": "14.00"
     },
     {
       "id": 7,
@@ -62,7 +62,7 @@
       "isAvailable": false,
       "description": "Sos boloński",
       "type": "spaghetti",
-      "price": "14"
+      "price": "14.00"
     },
     {
       "id": 9,
@@ -70,7 +70,7 @@
       "isAvailable": false,
       "description": "Sos serowo-smietanoy",
       "type": "spaghetti",
-      "price": "16"
+      "price": "16.00"
     },
     {
       "id": 10,
@@ -78,7 +78,7 @@
       "isAvailable": false,
       "description": "Sos szpinakowy z kurczakiem",
       "type": "spaghetti",
-      "price": "12"
+      "price": "12.00"
     },
     {
       "id": 11,
@@ -86,7 +86,7 @@
       "isAvailable": true,
       "description": "sos kurkowo-smietanowy",
       "type": "spaghetti",
-      "price": "14"
+      "price": "15.00"
     },
     {
       "id": 12,
@@ -94,15 +94,15 @@
       "isAvailable": false,
       "description": "Sos boloński",
       "type": "spagetti",
-      "price": "14"
+      "price": "12.00"
     },
     {
       "id": 13,
       "name": "Sok",
       "isAvailable": false,
-      "description": "pomaranczowy, bananowy, jablkowy",
-      "type": "spagetti",
-      "price": "14"
+      "description": "pomaranczowy, bananowy, jabłkowy",
+      "type": "napoj",
+      "price": "14.00"
     },
     {
       "id": 14,
@@ -110,7 +110,7 @@
       "isAvailable": true,
       "description": "napoj 1L",
       "type": "napoj",
-      "price": "8"
+      "price": "8.00"
     },
     {
       "id": 15,
@@ -118,15 +118,23 @@
       "isAvailable": true,
       "description": "napoj 1L",
       "type": "napoj",
-      "price": "8"
+      "price": "8.00"
     },
     {
       "id": 16,
       "name": "Piwo Warka",
       "isAvailable": true,
-      "description": "piwo 5,1%",
+      "description": "piwo 0.5L -- 5,1%",
       "type": "napoj",
-      "price": "10"
+      "price": "10.00"
+    },
+    {
+      "id": 17,
+      "name": "Piwo Perła",
+      "isAvailable": true,
+      "description": "piwo 0.5L -- 5,1%",
+      "type": "napoj",
+      "price": "10.00"
     }
   ],
   "orders": [

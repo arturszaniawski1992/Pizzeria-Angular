@@ -27,5 +27,10 @@ export class MenuService {
     return this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=napoj');
   }
 
+  getDish(id: number): Observable<Dish> {
+    return this.httpclient.get<Dish>(`http://localhost:3000/dishes/${id}`);
+  }
+
+
 
 }

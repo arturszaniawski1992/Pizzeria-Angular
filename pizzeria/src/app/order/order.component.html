@@ -1,0 +1,13 @@
+<table class="orders">
+  <tr>
+    <td>Id</td>
+    <td>productIds</td>
+  </tr>
+  <tr *ngFor="let order of orders">
+    <td>{{order.id}}</td>
+    <td>{{order.dishIds}}</td>
+  </tr>
+</table>
+<br>
+<br>
+<button class="button">PRZEJDZ DO ZAMOWIENIA</button>
