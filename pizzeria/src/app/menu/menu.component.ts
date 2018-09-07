@@ -1,8 +1,9 @@
-import {Component, Input, OnDestroy, OnInit, Output} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Dish} from '../shared/dish';
 import {MenuService} from '../shared/menu.service';
-import {Subject, Subscription} from 'rxjs';
-
+import {Subject} from 'rxjs';
+import {takeUntil} from 'rxjs/operators';
+import {CartService} from '../cart.service';
 
 @Component({
   selector: 'app-menu',
@@ -11,54 +12,42 @@ import {Subject, Subscription} from 'rxjs';
 })
 export class MenuComponent implements OnInit, OnDestroy {
 
-  dishes2$: Subject <Dish[]>;
-
-
   dishes: Dish[];
   private destroy$: Subject<void> = new Subject<void>();
 
-  constructor(private readonly menuService: MenuService) {
+  constructor(private readonly menuService: MenuService,
+              private readonly  cartService: CartService) {
   }
 
   ngOnInit() {
-    //this.menuService.dishes$.subscribe(dishes => this.dishes = dishes);
-    //this.dishes2$ = this.menuService.dishes$;
+    this.menuService.dishes$.pipe(
+      takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
     this.menuService.getDishes();
   }
 
   getPizza(event: Event) {
-    this.menuService.getPizza().subscribe(dishes => {
-      this.dishes = dishes;
-    })
+    this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
+    this.menuService.getPizza();
   }
 
   getPasta(event: Event) {
-    this.menuService.getPasta().subscribe(dishes => {
-      this.dishes = dishes;
-    })
+    this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
+    this.menuService.getPasta();
   }
 
   getDrinks(event: Event) {
-    this.menuService.getDrinks().subscribe(dishes => {
-      this.dishes = dishes;
-    })
+    this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
+    this.menuService.getDrinks();
   }
 
-  addDish(event: Event): void {
-    const dish: Dish = {
-      isAvailable: true,
-      price: 20,
-      name: 'Spaghetti',
-      description: 'nowe danie',
-      type: 'spagetti',
-    };
-    this.menuService.addDish(dish);
+  addDish(dish: Dish): void {
+      this.cartService.addDishToCart(dish);
   }
 
   ngOnDestroy(): void {
-      this.destroy$.next();
-      this.destroy$.complete();
-    }
+    this.destroy$.next();
+    this.destroy$.complete();
+  }
 
 }
 

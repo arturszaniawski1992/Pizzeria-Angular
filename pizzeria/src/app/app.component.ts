@@ -14,7 +14,7 @@ export class AppComponent {
 
   navigateToMenu() {
     this.menuService.getDishes();
-    this.router.navigate(['/menu']);
+    this.router.navigate(['/dishes']);
   }
 
 

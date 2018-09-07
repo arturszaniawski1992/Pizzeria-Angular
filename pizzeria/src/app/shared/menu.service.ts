@@ -10,9 +10,8 @@ export class MenuService {
 
   dishes$ = new Subject<Dish[]>();
 
-  constructor(public readonly httpclient: HttpClient
-  ) {}
-
+  constructor(public readonly httpclient: HttpClient) {
+  }
 
   getDishes(): void {
     this.httpclient.get<Dish[]>('http://localhost:3000/dishes').subscribe(dishes => this.dishes$.next(dishes));
@@ -34,9 +33,11 @@ export class MenuService {
     return this.httpclient.get<Dish>(`http://localhost:3000/dishes/${id}`);
   }
 
+  addDish(dish: Dish) {
+    this.httpclient.post('http://localhost:3000/dishes', dish).subscribe(
+      dishes => this.getDishes()
+    );
 
-
-
-
-
+  }
 }
+

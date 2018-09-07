@@ -1,7 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Dish} from '../shared/dish';
-import {ActivatedRoute} from '@angular/router';
-import {MenuService} from '../shared/menu.service';
+import {CartService} from '../cart.service';
 
 @Component({
   selector: 'app-cart',
@@ -13,13 +12,22 @@ export class CartComponent implements OnInit {
   private dishes: Dish[] = [];
   private total = 0;
 
-  constructor(
-    private activatedRoute: ActivatedRoute;
 
-  private menuService: MenuService;
-) {}
+  constructor(private readonly cartService: CartService) {
 
-ngOnInit(){}
+  }
 
+  ngOnInit(): void {
+    this.dishes = this.cartService.getDishesFromCart();
+
+  }
+
+  removeDishFromCart(dish: Dish) {
+    this.cartService.removeDishFromCart(dish);
+  }
+
+  getDishesFromCart() {
+    this.dishes = this.cartService.getDishesFromCart();
+  }
 
 }

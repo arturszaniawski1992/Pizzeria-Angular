@@ -14,9 +14,7 @@ export class OrderComponent implements OnInit, OnDestroy {
   orders: Dish[];
   sub: Subscription;
 
-  constructor(private readonly orderService: OrderService,
-              private readonly menuService: MenuService,
-  ) {
+  constructor(private readonly orderService: OrderService) {
   }
 
   ngOnInit() {

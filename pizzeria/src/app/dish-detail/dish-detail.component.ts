@@ -1,4 +1,4 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {Dish} from '../shared/dish';
 import {ActivatedRoute} from '@angular/router';
 import {MenuService} from '../shared/menu.service';
@@ -25,7 +25,7 @@ export class DishDetailComponent implements OnInit, OnDestroy {
     const id = this.route.snapshot.paramMap.get('id');
     this.sub = this.menuService.getDish(+id).subscribe(dish => {
       this.dish = dish;
-    }
+    };
   }
 
   ngOnDestroy(): void {
