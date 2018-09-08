@@ -1,6 +1,7 @@
 import {Injectable} from '@angular/core';
 import {Dish} from './shared/dish';
 import {HttpClient} from '@angular/common/http';
+import {Subject} from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -8,6 +9,7 @@ import {HttpClient} from '@angular/common/http';
 export class CartService {
 
   dishesInCart: Dish[] = [];
+  basket$ = new Subject<Dish>();
 
   indexOfDish: number;
 
@@ -15,19 +17,18 @@ export class CartService {
   constructor(public readonly httpclient: HttpClient) {
   }
 
-  addDishToCart(dish: Dish) {
-    this.dishesInCart.push(dish);
-  }
-
   getDishesFromCart() {
     return this.dishesInCart;
+  }
+
+  addDishToCart(dish: Dish) {
+    this.basket$.next(dish);
   }
 
   removeDishFromCart(dish: Dish) {
     this.indexOfDish = this.dishesInCart.indexOf(dish);
     this.dishesInCart.splice(this.indexOfDish, 1);
   }
-}
 
 
 }

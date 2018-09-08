@@ -41,13 +41,16 @@ export class MenuComponent implements OnInit, OnDestroy {
   }
 
   addDish(dish: Dish): void {
-      this.cartService.addDishToCart(dish);
+    this.cartService.addDishToCart(dish);
+
   }
 
   ngOnDestroy(): void {
     this.destroy$.next();
     this.destroy$.complete();
   }
+
+
 
 }
 

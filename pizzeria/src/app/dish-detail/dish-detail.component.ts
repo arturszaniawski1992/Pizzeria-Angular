@@ -1,4 +1,4 @@
-import {Component, Input, OnDestroy, OnInit} from '@angular/core';
+import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Dish} from '../shared/dish';
 import {ActivatedRoute} from '@angular/router';
 import {MenuService} from '../shared/menu.service';

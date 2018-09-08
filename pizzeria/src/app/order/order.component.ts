@@ -1,6 +1,6 @@
 import {Component,  OnInit,  OnDestroy} from '@angular/core';
 import {OrderService} from '../shared/order.service';
-import {Subscription} from 'rxjs';
+import {Subject, Subscription} from 'rxjs';
 import {MenuService} from '../shared/menu.service';
 import {Dish} from '../shared/dish';
 
@@ -12,7 +12,7 @@ import {Dish} from '../shared/dish';
 export class OrderComponent implements OnInit, OnDestroy {
 
   orders: Dish[];
-  sub: Subscription;
+  private destroy$: Subject<void> = new Subject<void>();
 
   constructor(private readonly orderService: OrderService) {
   }
@@ -23,10 +23,11 @@ export class OrderComponent implements OnInit, OnDestroy {
     })
   }
 
-  ngOnDestroy():
-    void {
-    this.sub.unsubscribe();
+  ngOnDestroy(){
+    this.destroy$.next();
+    this.destroy$.complete();
   }
+
 
 
 }
