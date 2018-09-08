@@ -10,6 +10,7 @@
 <button class="button" [routerLink]="['/orders']">ZAMÓWIENIE</button>
 <button class="button" [routerLink]="['/']">STRONA GŁÓWNA</button>
 <button class="button" [routerLink]="['/login']">ZALOGUJ</button>
+<button class="button" [routerLink]="['/admin']">ADMIN</button>
 <br>
 <div class="text">
   <h1>Witamy na naszej stronie!</h1>
@@ -19,5 +20,5 @@
     and fork, but in casual settings it is cut into wedges to be eaten while held in the hand. Small pizzas are
     sometimes called pizzettas.</h3>
 </div>
-<app-administrator *ngIf="user === 'admin'"></app-administrator>
+<app-administrator *ngIf=" user === 'admin'"></app-administrator>
 <router-outlet></router-outlet>

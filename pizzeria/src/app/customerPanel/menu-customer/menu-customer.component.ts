@@ -1,16 +1,16 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {Dish} from '../shared/dish';
-import {MenuService} from '../shared/menu.service';
+import {Dish} from '../../model/dish';
 import {Subject} from 'rxjs';
-import {takeUntil} from 'rxjs/operators';
+import {MenuService} from '../../shared/menu.service';
 import {CartService} from '../cart.service';
+import {takeUntil} from 'rxjs/operators';
 
 @Component({
-  selector: 'app-menu',
-  templateUrl: './menu.component.html',
-  styleUrls: ['./menu.component.scss']
+  selector: 'app-menu-customer',
+  templateUrl: './menu-customer.component.html',
+  styleUrls: ['./menu-customer.component.scss']
 })
-export class MenuComponent implements OnInit, OnDestroy {
+export class MenuCustomerComponent implements OnInit, OnDestroy {
 
   dishes: Dish[];
   private destroy$: Subject<void> = new Subject<void>();
@@ -40,7 +40,7 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.menuService.getDrinks();
   }
 
-  addDish(dish: Dish): void {
+  addDishToCart(dish: Dish): void {
     this.cartService.addDishToCart(dish);
 
   }
@@ -52,7 +52,5 @@ export class MenuComponent implements OnInit, OnDestroy {
 
 
 
+
 }
-
-
-

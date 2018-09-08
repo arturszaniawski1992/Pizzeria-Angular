@@ -141,10 +141,39 @@
   "orders": [
     {
       "id": 1,
-      "dishIds": [
-        1,
-        5
-      ]
+      "dishIds": [1,2],
+    "status": "OK",
+    "date": "2018-05-02",
+    "firstName": "Artur",
+    "lastName": "Szaniawski",
+    "town": "Lukow",
+    "street": "Klimeckiego",
+    "number": 11,
+    "mobile": "512665662"
+    },
+    {
+      "id": 1,
+      "dishIds": [1,2],
+      "status": "OK",
+      "date": "2018-05-02",
+      "firstName": "Artur",
+      "lastName": "Szaniawski",
+      "town": "Lukow",
+      "street": "Klimeckiego",
+      "number": 11,
+      "mobile": "512665662"
+    },
+    {
+      "id": 1,
+      "dishIds": [1,2],
+      "status": "OK",
+      "date": "2018-05-02",
+      "firstName": "Artur",
+      "lastName": "Szaniawski",
+      "town": "Lukow",
+      "street": "Klimeckiego",
+      "number": 11,
+      "mobile": "512665662"
     }
   ],
   "users": [

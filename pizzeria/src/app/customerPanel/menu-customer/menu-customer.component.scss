@@ -1,0 +1,56 @@
+.menu {
+  font-family: "Sylfaen", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  float: right;
+}
+
+.basket {
+  font-family: "Sylfaen", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 40%;
+  float: left;
+}
+
+.menu td, .customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.menu tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.menu tr:hover {
+  background-color: #ddd;
+}
+
+.menu th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.button {
+  font: bold 25px Sylfaen;
+  text-decoration: none;
+  background-color: #EEEEEE;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  padding: 5px;
+}
+
+.button:hover {
+  font: bold 20px Sylfaen;
+  background-color: seashell;
+  padding: 2px;
+  transition-duration: 1s;
+
+}
+

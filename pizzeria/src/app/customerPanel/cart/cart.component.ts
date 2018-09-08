@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {Dish} from '../shared/dish';
+import {Dish} from '../../model/dish';
 import {CartService} from '../cart.service';
 import {takeUntil} from 'rxjs/operators';
 import {Subject} from 'rxjs';
@@ -27,7 +27,6 @@ export class CartComponent implements OnInit, OnDestroy {
 
       }
     );
-
   }
 
   removeDishFromCart(dish: Dish) {

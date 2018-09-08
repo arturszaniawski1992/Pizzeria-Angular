@@ -1,12 +1,9 @@
 <button class="button" href="#" (click)="getPizza($event)">PIZZA</button>
 <button class="button" href="#" (click)="getPasta($event)">PASTA</button>
 <button class="button" href="#" (click)="getDrinks($event)">NAPOJE</button>
-
+<button class="button" [routerLink]="['/admin/order-list']">ZAMÓWIENIA</button>
+  <br>
 <br>
-<br>
-<div class="basket">
-  <app-cart></app-cart>
-</div>
 <table class="menu">
   <tr>
     <td>Name</td>
@@ -20,9 +17,8 @@
     <td>{{dish.description}}</td>
     <td>{{dish.price}}</td>
     <td>
-      <button href="#" (click)="addDish(dish)">Kup</button>
       <button class="dish" [routerLink]="['/dish-details', dish.id]">
-        Szczegóły
+        Szczegóły i edycja
       </button>
     </td>
   </tr>

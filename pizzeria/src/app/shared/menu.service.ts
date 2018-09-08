@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {Dish} from './dish';
+import {Dish} from '../model/dish';
 import {HttpClient} from '@angular/common/http';
 import {Observable, Subject} from 'rxjs';
 
@@ -9,8 +9,10 @@ import {Observable, Subject} from 'rxjs';
 export class MenuService {
 
   dishes$ = new Subject<Dish[]>();
+  dishesInCart: Dish[];
 
   constructor(public readonly httpclient: HttpClient) {
+    this.dishesInCart = [];
   }
 
   getDishes(): void {
@@ -33,10 +35,13 @@ export class MenuService {
     return this.httpclient.get<Dish>(`http://localhost:3000/dishes/${id}`);
   }
 
-  addDish(dish: Dish) {
-    this.httpclient.post('http://localhost:3000/dishes', dish).subscribe(
+
+  saveDish(dish: Dish) {
+    this.httpclient.post<Dish>('http://localhost:3000/dishes', dish).subscribe(
       dishes => this.getDishes()
     );
+
+
 
   }
 }

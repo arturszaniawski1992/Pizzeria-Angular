@@ -1,5 +1,5 @@
 <div class="cart">
-  <h3>Koszyk</h3>
+  <h2>KOSZYK</h2>
   <table class="menu">
     <tr>
       <td>Name</td>
@@ -13,6 +13,5 @@
       <button href="#" (click)="removeDishFromCart(dish)">Usuń</button>
     </tr>
   </table>
-
-<button class="order">ZAMÓW</button>
+  <button class="dish" [routerLink]="['/orders']">ZAMÓW</button>
 </div>

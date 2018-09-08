@@ -1,20 +1,23 @@
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
-import {MenuComponent} from './menu/menu.component';
-import {OrderComponent} from './order/order.component';
-import {DishDetailComponent} from './dish-detail/dish-detail.component';
+import {MenuComponent} from './administratorPanel/menu/menu.component';
+import {OrderComponent} from './customerPanel/order/order.component';
+import {DishDetailComponent} from './administratorPanel/dish-detail/dish-detail.component';
 import {AuthGuardService} from './shared/auth-guard.service';
-import {CartComponent} from './cart/cart.component';
-import {LogingComponent} from './loging/loging.component';
+import {CartComponent} from './customerPanel/cart/cart.component';
+import {LogingComponent} from './administratorPanel/loging/loging.component';
+import {MenuCustomerComponent} from './customerPanel/menu-customer/menu-customer.component';
+import {OrderListComponent} from './administratorPanel/order-list/order-list.component';
 
 const routes: Routes = [
-  {path: 'dishes', component: MenuComponent},
+  {path: 'dishes', component: MenuCustomerComponent},
+  {path: 'admin', component: MenuComponent, /*canActivate: [AuthGuardService]*/},
   {path: 'orders', component: OrderComponent},
   {path: 'dish-details/:id', component: DishDetailComponent},
-  {path: 'dishes/1', component: MenuComponent, canActivate: [AuthGuardService]},
   {path: 'cart', component: CartComponent},
-  {path: 'login', component: LogingComponent}
-];
+  {path: 'login', component: LogingComponent},
+  {path: 'admin/order-list', component: OrderListComponent}
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

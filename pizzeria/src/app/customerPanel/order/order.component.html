@@ -1,0 +1,36 @@
+<h2>Adres dostawy</h2>
+<form [formGroup]="formToOrder" id="orderform">
+  <table>
+    <tr>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>Imie:</td>
+      <td><input type="text" formControlName="firstName"></td>
+    </tr>
+    <tr>
+      <td>Nazwisko:</td>
+      <td><input type="text" formControlName="lastName"></td>
+    </tr>
+    <tr>
+      <td>Telefon:</td>
+      <td><input type="tel" formControlName="mobile"></td>
+    </tr>
+
+    <tr>
+      <td>Miasto:</td>
+      <td><input type="text" formControlName="town"></td>
+    </tr>
+    <tr>
+      <td>Ulica:</td>
+      <td><input type="text" formControlName="street"></td>
+    </tr>
+    <tr>
+      <td>Numer:</td>
+      <td><input type="text" formControlName="number"></td>
+    </tr>
+  </table>
+</form>
+<button type="submit" (click)="addOrder()">Zamów</button>
+
