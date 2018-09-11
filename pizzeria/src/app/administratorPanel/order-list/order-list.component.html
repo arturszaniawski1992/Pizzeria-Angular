@@ -13,7 +13,7 @@
   </tr>
   <tr *ngFor="let order of orderService.orders$ | async">
     <td>{{order.id}}</td>
-    <td>{{order.dishIds}}</td>
+    <td>{{order.dishesIds}}</td>
     <td>{{order.date}}</td>
     <td>{{order.firstName}}</td>
     <td>{{order.lastName}}</td>
@@ -22,8 +22,7 @@
     <td>{{order.number}}</td>
     <td>{{order.mobile}}</td>
     <td>{{order.status}}</td>
-    <button>ZMIEŃ STATUS</button>
-    <button class="dish" [routerLink]="['/dish-details', dish.id]">
+    <button class="button" [routerLink]="['/order-details', order.id]">
       Szczegóły i edycja
     </button>
   </tr>

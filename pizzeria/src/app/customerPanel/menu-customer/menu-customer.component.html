@@ -9,10 +9,10 @@
 <table class="menu">
   <h2>MENU</h2>
   <tr>
-    <td>Name</td>
-    <td>Type</td>
-    <td>Description</td>
-    <td>Price</td>
+    <td>Nazwa</td>
+    <td>Rodzaj</td>
+    <td>Opis</td>
+    <td>Cena</td>
   </tr>
   <tr *ngFor="let dish of menuService.dishes$ | async">
     <td>{{dish.name}}</td>

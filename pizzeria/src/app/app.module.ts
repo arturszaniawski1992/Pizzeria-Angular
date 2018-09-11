@@ -16,6 +16,7 @@ import {LogingComponent} from './administratorPanel/loging/loging.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MenuCustomerComponent} from './customerPanel/menu-customer/menu-customer.component';
 import {OrderListComponent} from './administratorPanel/order-list/order-list.component';
+import { OrderListDetailsComponent } from './administratorPanel/order-list-details/order-list-details.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import {OrderListComponent} from './administratorPanel/order-list/order-list.com
     CartComponent,
     LogingComponent,
     MenuCustomerComponent,
-    OrderListComponent
+    OrderListComponent,
+    OrderListDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +38,7 @@ import {OrderListComponent} from './administratorPanel/order-list/order-list.com
     ServiceWorkerModule.register('ngsw-worker.js', {enabled: environment.production}),
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

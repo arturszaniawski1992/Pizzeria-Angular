@@ -8,12 +8,14 @@ import {CartComponent} from './customerPanel/cart/cart.component';
 import {LogingComponent} from './administratorPanel/loging/loging.component';
 import {MenuCustomerComponent} from './customerPanel/menu-customer/menu-customer.component';
 import {OrderListComponent} from './administratorPanel/order-list/order-list.component';
+import {OrderListDetailsComponent} from './administratorPanel/order-list-details/order-list-details.component';
 
 const routes: Routes = [
   {path: 'dishes', component: MenuCustomerComponent},
   {path: 'admin', component: MenuComponent, /*canActivate: [AuthGuardService]*/},
   {path: 'orders', component: OrderComponent},
   {path: 'dish-details/:id', component: DishDetailComponent},
+  {path: 'order-details/:id', component: OrderListDetailsComponent},
   {path: 'cart', component: CartComponent},
   {path: 'login', component: LogingComponent},
   {path: 'admin/order-list', component: OrderListComponent}

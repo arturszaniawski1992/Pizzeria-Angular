@@ -1,23 +1,16 @@
 <table class="menu">
   <tr>
-    <td>Name</td>
-    <td>Description</td>
-    <td>Price</td>
+    <td>Nazwa</td>
+    <td>Opis</td>
+    <td>Cena</td>
+    <td>Typ</td>
+    <td>Dostępność</td>
   </tr>
   <td>{{dish.name}}</td>
   <td>{{dish.description}}</td>
   <td>{{dish.price}}</td>
+  <td>{{dish.type}}</td>
+  <td>{{dish.isAvailable}}</td>
 </table>
-<div>
-  <label>Nazwa:
-    <input [(ngModel)]="dish.name" placeholder="Zmień nazwę">
-  </label>
-  <label>Opis:
-    <input [(ngModel)]="dish.description" placeholder="Zmień opis">
-  </label>
-  <label>Cena:
-    <input [(ngModel)]="dish.price" placeholder="Zmień cene">
-  </label>
-</div>
-<button class="button" onclick="saveDish">ZAPISZ</button>
+<button class="button" (click)="changeAvailability()">Zmień dostępność</button>
 <button class="button" [routerLink]="['/admin']">Wróc</button>

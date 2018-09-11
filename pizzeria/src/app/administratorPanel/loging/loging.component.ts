@@ -15,6 +15,10 @@ export class LogingComponent implements OnInit {
   }
 
   logAdmin(login: string, password: string) {
-    this.logingService.logAdmin(login, password);
+    this.logingService.logIn(login, password);
+  }
+
+  logOutAdmin(login: string, password: string) {
+    this.logingService.logOut();
   }
 }

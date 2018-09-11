@@ -3,7 +3,10 @@
   border-collapse: collapse;
   width: 100%;
   align-content: center;
-  background-color: #f2f2f2;
+  /*
+  background: url("http://www.sparrowspizza.com/img/slideshow/img-one.jpg");
+  */
+
 }
 
 .header {
@@ -30,27 +33,34 @@
   display: inline-block;
   margin: 0 auto;
 }
-.button:hover{
+
+.button:hover {
   font: bold 20px Sylfaen;
   background-color: seashell;
   padding: 2px;
-  transition-duration:1s;
+  transition-duration: 1s;
 }
-.buttons{
+
+.buttons {
   background-color: red;
   height: 40px;
   width: 100%;
   align-content: center;
   align-items: center;
 
-
 }
 
-.text{
+.text {
   font-family: "Sylfaen", Arial, Helvetica, bold, cursive;
   align-content: center;
   border-collapse: collapse;
   width: 100%;
   text-align: center;
-  background-color: antiquewhite;
+}
+
+.images {
+  width: 150px;
+  height: 150px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
 }

@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Dish} from '../model/dish';
-import {Subject} from "rxjs";
+import {Subject} from 'rxjs';
 
 
 @Injectable({
@@ -9,8 +9,7 @@ import {Subject} from "rxjs";
 export class CartService {
 
   dishesInCart: Dish[] = [];
-  addedDish = (JSON.parse(localStorage.getItem('dishesAdded') ? localStorage.getItem('dishesAdded') : '[]') as Dish[]);
-  basket$ = new Subject<Dish>();
+  cart$ = new Subject<Dish[]>();
   indexOfDish: number;
 
   constructor() {
@@ -21,14 +20,15 @@ export class CartService {
   }
 
   addDishToCart(dish: Dish) {
-    this.addedDish.push(dish);
-    localStorage.setItem('dishesAdded', JSON.stringify(this.addedDish));
+    this.dishesInCart.push(dish);
+    this.cart$.next(this.dishesInCart);
+
   }
 
   removeDishFromCart(dish: Dish) {
-    this.indexOfDish = this.addedDish.indexOf(dish);
-    this.addedDish.splice(this.indexOfDish, 1);
-    localStorage.setItem('dishesAdded', JSON.stringify(this.addedDish));
+    this.indexOfDish = this.dishesInCart.indexOf(dish);
+    this.dishesInCart.splice(this.indexOfDish, 1);
+    this.cart$.next(this.dishesInCart);
   }
 
 

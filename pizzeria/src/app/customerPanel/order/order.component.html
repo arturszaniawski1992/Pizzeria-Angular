@@ -1,6 +1,6 @@
-<h2>Adres dostawy</h2>
-<form [formGroup]="formToOrder" id="orderform">
-  <table>
+<h2>Podaj adres dostawy</h2>
+<form [formGroup]="formToOrder" class="orderForm">
+  <table class="orderFrom">
     <tr>
       <th></th>
       <th></th>
@@ -14,11 +14,6 @@
       <td><input type="text" formControlName="lastName"></td>
     </tr>
     <tr>
-      <td>Telefon:</td>
-      <td><input type="tel" formControlName="mobile"></td>
-    </tr>
-
-    <tr>
       <td>Miasto:</td>
       <td><input type="text" formControlName="town"></td>
     </tr>
@@ -30,7 +25,16 @@
       <td>Numer:</td>
       <td><input type="text" formControlName="number"></td>
     </tr>
+    <tr>
+      <td>Telefon:</td>
+      <td><input type="tel" formControlName="mobile"></td>
+    </tr>
+
   </table>
+  <button type="submit" (click)="addOrder()">Zamów</button>
 </form>
-<button type="submit" (click)="addOrder()">Zamów</button>
+
+
+
+
 

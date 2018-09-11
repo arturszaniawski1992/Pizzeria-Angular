@@ -13,18 +13,16 @@ export class CartComponent implements OnInit, OnDestroy {
 
   private destroy$: Subject<void> = new Subject<void>();
   private dishes: Dish[] = [];
-  private total = 0;
 
 
   constructor(private readonly cartService: CartService) {
   }
 
   ngOnInit(): void {
-    this.dishes = (JSON.parse(localStorage.getItem('basket') ? localStorage.getItem('basket') : '[]') as Dish[]);
-    this.cartService.basket$.pipe(takeUntil(this.destroy$)).subscribe(dish => {
-        this.dishes.push(dish);
-        localStorage.setItem('basket', JSON.stringify(this.dishes));
-
+    this.dishes = (JSON.parse(localStorage.getItem('cart') ? localStorage.getItem('cart') :  '[]') as Dish[]);
+    this.cartService.cart$.pipe(takeUntil(this.destroy$)).subscribe(dishes => {
+      this.dishes = dishes;
+      localStorage.setItem('cart',  JSON.stringify(this.dishes));
       }
     );
   }
