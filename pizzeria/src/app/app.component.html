@@ -1,27 +1,26 @@
-<!--The content below is only a placeholder and can be replaced.-->
 <div class="container">
   <div class="header"><h1>{{ title }}</h1></div>
+  <br>
   <br>
   <div class="buttons"></div>
   <br>
   <button class="button" (click)="navigateToMenu()">MENU</button>
-  <button class="button" [routerLink]="['/cart']">KOSZYK</button>
-  <button class="button" [routerLink]="['/orders']">ZAMÓWIENIE</button>
+  <button class="button" [routerLink]="['/cart']" *ngIf="!logingService.logedAsAdmin">KOSZYK</button>
+  <button class="button" [routerLink]="['/orders']" *ngIf="!logingService.logedAsAdmin">ZAMÓWIENIE</button>
   <button class="button" [routerLink]="['/']">STRONA GŁÓWNA</button>
-  <button class="button" [routerLink]="['/login']">ZALOGUJ</button>
-  <button class="button" [routerLink]="['/admin']">ADMIN</button>
+  <button class="button" [routerLink]="['/login']" *ngIf="!logingService.logedAsAdmin">ZALOGUJ</button>
+  <button class="button" (click)="logingService.logOut()" *ngIf="logingService.logedAsAdmin">WYLOGUJ</button>
+  <button class="button" [routerLink]="['/admin']" *ngIf="logingService.logedAsAdmin">ADMIN</button>
   <br>
-  <div class="text">
-    <h1>Witamy na naszej stronie!</h1>
-    <h3>Pizza is a savoury dish of Italian origin, consisting of a usually round, flattened base of leavened wheat-based
-      dough topped with tomatoes, cheese, and various other ingredients (anchovies, olives, meat, etc.) baked at a high
-      temperature in a traditionally wood-fired oven. In formal settings, like a restaurant, pizza is eaten with knife
-      and fork, but in casual settings it is cut into wedges to be eaten while held in the hand. Small pizzas are
-      sometimes called pizzettas.</h3>
-  </div>
-  <app-administrator *ngIf=" user === 'admin'"></app-administrator>
-  <router-outlet></router-outlet>
-
+  <h1>Witamy w naszej pizzeri!</h1>
+  <h3>Pizza is a savoury dish of Italian origin, consisting of a usually round, flattened base of leavened wheat-based
+    dough topped with tomatoes, cheese, and various other ingredients (anchovies, olives, meat, etc.) baked at a high
+    temperature in a traditionally wood-fired oven. In formal settings, like a restaurant, pizza is eaten with knife
+    and fork, but in casual settings it is cut into wedges to be eaten while held in the hand. Small pizzas are
+    sometimes called pizzettas.</h3>
 </div>
+<router-outlet></router-outlet>
+
+
 
 

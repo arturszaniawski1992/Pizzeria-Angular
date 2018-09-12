@@ -1,7 +1,6 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
 import {OrderService} from '../../shared/order.service';
 import {Subject} from 'rxjs';
-import {MenuService} from '../../shared/menu.service';
 import {Dish} from '../../model/dish';
 import {Order} from '../../model/order';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
@@ -31,7 +30,7 @@ export class OrderComponent implements OnInit, OnDestroy {
     }
   )
 
-  constructor(private readonly orderService: OrderService, readonly menuService: MenuService,
+  constructor(private readonly orderService: OrderService,
               private readonly router: Router) {
   }
 

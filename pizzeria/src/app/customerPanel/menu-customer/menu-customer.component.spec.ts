@@ -5,7 +5,7 @@ import {MenuService} from '../../shared/menu.service';
 import {CartService} from '../cart.service';
 import {NO_ERRORS_SCHEMA} from '@angular/core';
 import {RouterTestingModule} from '@angular/router/testing';
-import {LogingService} from '../../administratorPanel/loging.service';
+import {LogingService} from '../../administratorPanel/loging/loging.service';
 import {HttpClient} from '@angular/common/http';
 import {Subject} from 'rxjs';
 import {Dish} from '../../model/dish';

@@ -1,10 +1,6 @@
 <h2>Podaj adres dostawy</h2>
-<form [formGroup]="formToOrder" class="orderForm">
+<form [formGroup]="formToOrder" class="orderForm" (ngSubmit)="addOrder()">
   <table class="orderFrom">
-    <tr>
-      <th></th>
-      <th></th>
-    </tr>
     <tr>
       <td>Imie:</td>
       <td><input type="text" formControlName="firstName"></td>
@@ -29,9 +25,8 @@
       <td>Telefon:</td>
       <td><input type="tel" formControlName="mobile"></td>
     </tr>
-
   </table>
-  <button type="submit" (click)="addOrder()">Zamów</button>
+  <button type="submit">Zamów</button>
 </form>
 
 

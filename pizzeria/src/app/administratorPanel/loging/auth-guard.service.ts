@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot} from '@angular/router';
-import {LogingService} from '../administratorPanel/loging.service';
+import {LogingService} from './loging.service';
 
 @Injectable({
   providedIn: 'root'
@@ -12,7 +12,7 @@ export class AuthGuardService implements CanActivate {
   }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean {
-    const isLogged = true; //this.loginService.logIn();
+    const isLogged = this.loginService.logedAsAdmin;
     if (isLogged) {
       return true;
     } else {
@@ -21,5 +21,6 @@ export class AuthGuardService implements CanActivate {
     }
     return false;
   }
+
 
 }

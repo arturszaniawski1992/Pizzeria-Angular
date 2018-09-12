@@ -3,6 +3,7 @@ import {Dish} from '../model/dish';
 import {HttpClient} from '@angular/common/http';
 import {Observable, Subject} from 'rxjs';
 import {map} from 'rxjs/operators';
+import {LogingService} from '../administratorPanel/loging/loging.service';
 
 @Injectable({
   providedIn: 'root'
@@ -11,16 +12,15 @@ export class MenuService {
 
   dishes$ = new Subject<Dish[]>();
   dishesInCart: Dish[];
-  logged: boolean;
 
-  constructor(private readonly httpclient: HttpClient
-  ) {
+  constructor(private readonly httpclient: HttpClient,
+              private readonly loginService: LogingService) {
     this.dishesInCart = [];
   }
 
   getDishes(): void {
     let dishesObs$ = this.httpclient.get<Dish[]>('http://localhost:3000/dishes');
-    if (!this.logged) {
+    if (!this.loginService.logedAsAdmin) {
       dishesObs$ = dishesObs$.pipe(
         map(dishes => dishes.filter(dish => dish.isAvailable))
       )
@@ -30,7 +30,7 @@ export class MenuService {
 
   getPizza(): void {
     let dishesObs$ = this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=pizza');
-    if (!this.logged) {
+    if (!this.loginService.logedAsAdmin) {
       dishesObs$ = dishesObs$.pipe(
         map(dishes => dishes.filter(dish => dish.isAvailable))
       )
@@ -40,7 +40,7 @@ export class MenuService {
 
   getPasta(): void {
     let dishesObs$ = this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=spaghetti');
-    if (!this.logged) {
+    if (!this.loginService.logedAsAdmin) {
       dishesObs$ = dishesObs$.pipe(
         map(dishes => dishes.filter(dish => dish.isAvailable))
       )
@@ -50,7 +50,7 @@ export class MenuService {
 
   getDrinks(): void {
     let dishesObs$ = this.httpclient.get<Dish[]>('http://localhost:3000/dishes?type=napoj');
-    if (!this.logged) {
+    if (!this.loginService.logedAsAdmin) {
       dishesObs$ = dishesObs$.pipe(
         map(dishes => dishes.filter(dish => dish.isAvailable))
       )

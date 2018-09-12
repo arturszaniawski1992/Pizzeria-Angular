@@ -17,6 +17,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MenuCustomerComponent} from './customerPanel/menu-customer/menu-customer.component';
 import {OrderListComponent} from './administratorPanel/order-list/order-list.component';
 import { OrderListDetailsComponent } from './administratorPanel/order-list-details/order-list-details.component';
+import {LogingService} from './administratorPanel/loging/loging.service';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,7 @@ import { OrderListDetailsComponent } from './administratorPanel/order-list-detai
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [],
+  providers: [LogingService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

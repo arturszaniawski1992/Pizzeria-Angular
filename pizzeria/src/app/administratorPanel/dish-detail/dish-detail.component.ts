@@ -4,6 +4,7 @@ import {ActivatedRoute} from '@angular/router';
 import {MenuService} from '../../shared/menu.service';
 import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
+import {User} from "../../model/user";
 
 
 @Component({
@@ -13,7 +14,8 @@ import {takeUntil} from 'rxjs/operators';
 })
 export class DishDetailComponent implements OnInit, OnDestroy {
 
-  dish: Dish;
+
+  dish: Dish = {} as Dish;
   private destroy$: Subject<void> = new Subject<void>();
 
   constructor(

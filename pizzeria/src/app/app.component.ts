@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 import {MenuService} from './shared/menu.service';
 import {Router} from '@angular/router';
+import {LogingService} from './administratorPanel/loging/loging.service';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,7 @@ import {Router} from '@angular/router';
 export class AppComponent {
   title = 'PIZZERIA SOPRANO';
 
-  constructor(private menuService: MenuService,  private router: Router) {}
+  constructor(private menuService: MenuService,  private router: Router, readonly logingService: LogingService) {}
 
   navigateToMenu() {
     this.menuService.getDishes();
