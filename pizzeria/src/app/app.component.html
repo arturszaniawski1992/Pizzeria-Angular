@@ -6,7 +6,6 @@
   <br>
   <button class="button" (click)="navigateToMenu()">MENU</button>
   <button class="button" [routerLink]="['/cart']" *ngIf="!logingService.logedAsAdmin">KOSZYK</button>
-  <button class="button" [routerLink]="['/orders']" *ngIf="!logingService.logedAsAdmin">ZAMÓWIENIE</button>
   <button class="button" [routerLink]="['/']">STRONA GŁÓWNA</button>
   <button class="button" [routerLink]="['/login']" *ngIf="!logingService.logedAsAdmin">ZALOGUJ</button>
   <button class="button" (click)="logingService.logOut()" *ngIf="logingService.logedAsAdmin">WYLOGUJ</button>

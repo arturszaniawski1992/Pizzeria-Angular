@@ -3,8 +3,7 @@ import {Dish} from '../../model/dish';
 import {ActivatedRoute} from '@angular/router';
 import {MenuService} from '../../shared/menu.service';
 import {Subject} from 'rxjs';
-import {takeUntil} from 'rxjs/operators';
-import {User} from "../../model/user";
+
 
 
 @Component({
@@ -29,10 +28,6 @@ export class DishDetailComponent implements OnInit, OnDestroy {
     this.menuService.getDish(+id).subscribe(dish => {
       this.dish = dish;
     })
-  }
-
-  saveDish(dish: Dish) {
-    this.menuService.saveDish(dish);
   }
 
   changeAvailability() {

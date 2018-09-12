@@ -1,6 +1,6 @@
 export interface Order {
   id: number;
-  dishesIds : number[];
+  dishesIds: number[];
   status: string;
   date: Date;
   firstName: string;

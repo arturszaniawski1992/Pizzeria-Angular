@@ -7,13 +7,11 @@
 <table class="menu">
   <tr>
     <td>Name</td>
-    <td>Type</td>
     <td>Description</td>
     <td>Price</td>
   </tr>
   <tr *ngFor="let dish of menuService.dishes$ | async">
     <td>{{dish.name}}</td>
-    <td>{{dish.type}}</td>
     <td>{{dish.description}}</td>
     <td>{{dish.price}}</td>
     <td>

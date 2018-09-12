@@ -12,13 +12,21 @@ import {OrderListDetailsComponent} from './administratorPanel/order-list-details
 
 const routes: Routes = [
   {path: 'dishes', component: MenuCustomerComponent},
-  {path: 'admin', component: MenuComponent, canActivate: [AuthGuardService]},
+  {
+    path: 'admin', component: MenuComponent, canActivate: [AuthGuardService],
+    children: [{
+      path: '',
+      canActivateChild: [AuthGuardService],
+      children: [
+        {path: 'dish-details/:id', component: DishDetailComponent},
+        {path: 'order-list', component: OrderListComponent},
+        {path: 'order-details/:id', component: OrderListDetailsComponent},
+      ]
+    }]
+  },
   {path: 'orders', component: OrderComponent},
-  {path: 'dish-details/:id', component: DishDetailComponent},
-  {path: 'order-details/:id', component: OrderListDetailsComponent},
   {path: 'cart', component: CartComponent},
   {path: 'login', component: LogingComponent},
-  {path: 'admin/order-list', component: OrderListComponent}
 ]
 
 @NgModule({

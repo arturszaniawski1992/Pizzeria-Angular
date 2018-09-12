@@ -2,29 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74ae8164-b630-4037-b500-bb4911ac4751" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/server/db.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging.service.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/app.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/app.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/cart/cart.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/cart/cart.component.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/menu-customer/menu-customer.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/menu-customer/menu-customer.component.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/model/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/model/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/shared/auth-guard.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/auth-guard.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/shared/menu.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/shared/menu.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pizzeria/src/app/model/order.ts" beforeDir="false" afterPath="$PROJECT_DIR$/pizzeria/src/app/model/order.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -53,41 +42,41 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="173" />
+          <entry key="html" value="180" />
           <entry key="jpg" value="1" />
           <entry key="js" value="3" />
           <entry key="json" value="29" />
-          <entry key="scss" value="58" />
-          <entry key="ts" value="406" />
+          <entry key="scss" value="60" />
+          <entry key="ts" value="422" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="173" />
+          <entry key="HTML" value="180" />
           <entry key="Image" value="1" />
           <entry key="JSON" value="29" />
           <entry key="JavaScript" value="3" />
-          <entry key="SCSS" value="58" />
-          <entry key="TypeScript" value="405" />
+          <entry key="SCSS" value="60" />
+          <entry key="TypeScript" value="421" />
           <entry key="Vue.js" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="4117" />
+          <entry key="html" value="4213" />
           <entry key="js" value="9" />
           <entry key="json" value="642" />
-          <entry key="scss" value="595" />
-          <entry key="ts" value="13848" />
+          <entry key="scss" value="640" />
+          <entry key="ts" value="14210" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="4117" />
+          <entry key="HTML" value="4213" />
           <entry key="JSON" value="642" />
           <entry key="JavaScript" value="9" />
-          <entry key="SCSS" value="595" />
-          <entry key="TypeScript" value="13725" />
+          <entry key="SCSS" value="640" />
+          <entry key="TypeScript" value="14087" />
           <entry key="Vue.js" value="123" />
         </counts>
       </usages-collector>
@@ -96,10 +85,22 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#59#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
+            <state relative-caret-position="609">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -108,31 +109,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.html">
+        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app-routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+            <state relative-caret-position="504">
+              <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.ts">
+        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/model/order.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="507">
-              <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+            <state relative-caret-position="168">
+              <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
               <folding>
                 <element signature="e#0#59#0" expanded="true" />
               </folding>
@@ -141,13 +142,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.service.spec.ts">
+        <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="e#0#56#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="336">
+              <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -172,7 +170,6 @@
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/administrator/administrator.component.html" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/order-list/order-list.component.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/order-list/order-list.component.scss" />
-        <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.html" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/menu-customer/menu-customer.component.scss" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/menu-customer/menu-customer.component.html" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/cart/cart.component.html" />
@@ -185,32 +182,33 @@
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/order-list-details/order-list-details.component.html" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/order-list-details/order-list-details.component.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/karma.conf.js" />
-        <option value="$PROJECT_DIR$/pizzeria/src/app/model/order.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/menu-customer/menu-customer.component.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/menu-customer/menu-customer.component.spec.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/shared/menu.service.spec.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/order-list-details/order-list-details.component.scss" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/model/user.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging.service.ts" />
-        <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.html" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/shared/auth-guard.service.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.scss" />
-        <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.scss" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/cart/cart.component.scss" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/app.component.scss" />
-        <option value="$PROJECT_DIR$/pizzeria/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/shared/menu.service.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/auth-guard.service.ts" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.ts" />
         <option value="$PROJECT_DIR$/pizzeria/server/db.json" />
-        <option value="$PROJECT_DIR$/pizzeria/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.service.ts" />
+        <option value="$PROJECT_DIR$/pizzeria/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/pizzeria/src/app/model/order.ts" />
+        <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.html" />
+        <option value="$PROJECT_DIR$/pizzeria/src/app/app.component.html" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.scss" />
-        <option value="$PROJECT_DIR$/pizzeria/src/app/app-routing.module.ts" />
-        <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.ts" />
+        <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.html" />
         <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.html" />
+        <option value="$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.ts" />
+        <option value="$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.ts" />
+        <option value="$PROJECT_DIR$/pizzeria/src/app/app-routing.module.ts" />
       </list>
     </option>
   </component>
@@ -280,7 +278,16 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="administratorPanel" type="462c0819:PsiDirectoryNode" />
-              <item name="loging" type="462c0819:PsiDirectoryNode" />
+              <item name="dish-detail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pizzeria" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pizzeria" type="462c0819:PsiDirectoryNode" />
+              <item name="pizzeria" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="administratorPanel" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pizzeria" type="b2602c69:ProjectViewProjectNode" />
@@ -298,14 +305,6 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="customerPanel" type="462c0819:PsiDirectoryNode" />
               <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Pizzeria" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Pizzeria" type="462c0819:PsiDirectoryNode" />
-              <item name="pizzeria" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -395,7 +394,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536143146644</updated>
       <workItem from="1536143147955" duration="5432000" />
-      <workItem from="1536148902367" duration="149358000" />
+      <workItem from="1536148902367" duration="154391000" />
     </task>
     <servers />
   </component>
@@ -432,18 +431,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154790000" />
+    <option name="totallyTimeSpent" value="159823000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27921733" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3188789" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.06979405" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.06979405" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -458,12 +457,12 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1988366" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24695928" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.06979405" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -471,8 +470,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="TypeScript" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.25514874" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.32951945" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -526,13 +525,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/shared/order.service.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -549,13 +541,6 @@
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/model/order.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="9" column="17" lean-forward="true" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -576,29 +561,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="e#0#73#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/shared/menu.service.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="20" column="4" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -630,13 +598,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/model/user.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/cart.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="567">
@@ -654,13 +615,6 @@
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/order-list/order-list.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -699,23 +653,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -740,30 +677,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app.module.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="59">
           <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -787,26 +704,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/server/db.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3276">
           <caret line="156" column="12" lean-forward="true" selection-start-line="156" selection-start-column="12" selection-end-line="156" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app.component.spec.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#55#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,36 +718,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="21" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/shared/order.service.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="7" column="2" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="7" selection-end-column="2" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app-routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -861,16 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="27" column="55" lean-forward="true" selection-start-line="27" selection-start-column="55" selection-end-line="27" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.service.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -881,30 +748,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.service.ts">
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/shared/menu.service.spec.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="2" lean-forward="true" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        <state relative-caret-position="525">
+          <caret line="25" column="54" selection-start-line="25" selection-start-column="54" selection-end-line="25" selection-end-column="54" />
           <folding>
-            <element signature="e#0#41#0" expanded="true" />
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="47" column="38" lean-forward="true" selection-start-line="47" selection-start-column="38" selection-end-line="47" selection-end-column="38" />
+        <state relative-caret-position="423">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app.component.spec.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/model/user.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="24" lean-forward="true" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/order-list/order-list.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="21" lean-forward="true" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="61" lean-forward="true" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="19" column="19" lean-forward="true" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="588">
+          <caret line="28" column="30" lean-forward="true" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/loging/loging.component.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="126">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/dish-detail/dish-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/model/order.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/administratorPanel/menu/menu.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="56" lean-forward="true" selection-start-line="17" selection-start-column="56" selection-end-line="17" selection-end-column="56" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/customerPanel/order/order.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="609">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pizzeria/src/app/app-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="27" column="43" lean-forward="true" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

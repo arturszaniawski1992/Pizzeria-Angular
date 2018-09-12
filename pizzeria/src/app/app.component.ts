@@ -9,9 +9,9 @@ import {LogingService} from './administratorPanel/loging/loging.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'PIZZERIA SOPRANO';
+  title = 'PIZZERIA';
 
-  constructor(private menuService: MenuService,  private router: Router, readonly logingService: LogingService) {}
+  constructor(private menuService: MenuService,  private router: Router,  readonly logingService: LogingService) {}
 
   navigateToMenu() {
     this.menuService.getDishes();

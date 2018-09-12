@@ -52,6 +52,7 @@ export class OrderComponent implements OnInit, OnDestroy {
     this.orderService.addOrder(this.order).subscribe();
     alert('Twoje zamówienie zostało złożone!');
     this.router.navigate(['/']);
+    localStorage.removeItem('cart');
   }
 
 
