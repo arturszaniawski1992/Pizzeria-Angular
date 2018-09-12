@@ -8,6 +8,7 @@
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
+
 .login input {
   font-family: "Sylfaen", sans-serif;
   outline: 0;
@@ -19,16 +20,24 @@
   box-sizing: border-box;
   font-size: 14px;
 }
-.login button {
+
+button {
   font-family: "Sylfaen", sans-serif;
   text-transform: uppercase;
   outline: 0;
-  background: black;
+  background: firebrick;
   width: 100%;
   border: 0;
   padding: 15px;
   color: #FFFFFF;
   font-size: 14px;
   cursor: pointer;
+}
+
+.invalid {
+  text-transform: uppercase;
+  background: grey;
+  width: 80%;
+
 }
 

@@ -22,7 +22,7 @@
     <td>{{order.number}}</td>
     <td>{{order.mobile}}</td>
     <td>{{order.status}}</td>
-    <button class="button" [routerLink]="['/order-details', order.id]">
+    <button class="button" [routerLink]="['order-details', order.id]">
       Szczegóły i edycja
     </button>
   </tr>

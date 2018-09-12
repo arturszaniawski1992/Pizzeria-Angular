@@ -12,18 +12,10 @@ import {OrderListDetailsComponent} from './administratorPanel/order-list-details
 
 const routes: Routes = [
   {path: 'dishes', component: MenuCustomerComponent},
-  {
-    path: 'admin', component: MenuComponent, canActivate: [AuthGuardService],
-    children: [{
-      path: '',
-      canActivateChild: [AuthGuardService],
-      children: [
-        {path: 'dish-details/:id', component: DishDetailComponent},
-        {path: 'order-list', component: OrderListComponent},
-        {path: 'order-details/:id', component: OrderListDetailsComponent},
-      ]
-    }]
-  },
+  {path: 'admin', component: MenuComponent, canActivate: [AuthGuardService]},
+  {path: 'admin/dish-details/:id', component: DishDetailComponent, canActivate: [AuthGuardService]},
+  {path: 'admin/order-list', component: OrderListComponent, canActivate: [AuthGuardService]},
+  {path: 'admin/order-list/order-details/:id', component: OrderListDetailsComponent, canActivate: [AuthGuardService]},
   {path: 'orders', component: OrderComponent},
   {path: 'cart', component: CartComponent},
   {path: 'login', component: LogingComponent},

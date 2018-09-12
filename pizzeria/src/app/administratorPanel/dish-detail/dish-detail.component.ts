@@ -5,14 +5,12 @@ import {MenuService} from '../../shared/menu.service';
 import {Subject} from 'rxjs';
 
 
-
 @Component({
   selector: 'app-dish-detail',
   templateUrl: './dish-detail.component.html',
   styleUrls: ['./dish-detail.component.scss']
 })
 export class DishDetailComponent implements OnInit, OnDestroy {
-
 
   dish: Dish = {} as Dish;
   private destroy$: Subject<void> = new Subject<void>();

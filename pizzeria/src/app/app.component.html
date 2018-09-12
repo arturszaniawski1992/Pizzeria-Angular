@@ -4,12 +4,13 @@
   <br>
   <div class="buttons"></div>
   <br>
-  <button class="button" (click)="navigateToMenu()">MENU</button>
+  <button class="button" (click)="navigateToMenu()" *ngIf="!logingService.logedAsAdmin">MENU</button>
   <button class="button" [routerLink]="['/cart']" *ngIf="!logingService.logedAsAdmin">KOSZYK</button>
   <button class="button" [routerLink]="['/']">STRONA GŁÓWNA</button>
+  <button class="button" [routerLink]="['/admin']" *ngIf="logingService.logedAsAdmin">ADMIN</button>
   <button class="button" [routerLink]="['/login']" *ngIf="!logingService.logedAsAdmin">ZALOGUJ</button>
   <button class="button" (click)="logingService.logOut()" *ngIf="logingService.logedAsAdmin">WYLOGUJ</button>
-  <button class="button" [routerLink]="['/admin']" *ngIf="logingService.logedAsAdmin">ADMIN</button>
+
   <br>
   <h1>Witamy w naszej pizzeri!</h1>
   <h3>Pizza is a savoury dish of Italian origin, consisting of a usually round, flattened base of leavened wheat-based

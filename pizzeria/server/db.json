@@ -43,7 +43,7 @@
     {
       "id": 6,
       "name": "Spagetti Bolognese",
-      "isAvailable": true,
+      "isAvailable": false,
       "description": "Sos boloński",
       "type": "spaghetti",
       "price": "14.00"
@@ -67,7 +67,7 @@
     {
       "id": 9,
       "name": "Spagetti Carbonarra",
-      "isAvailable": true,
+      "isAvailable": false,
       "description": "Sos serowo-smietanoy",
       "type": "spaghetti",
       "price": "16.00"
@@ -150,7 +150,7 @@
       "street": "Grochowska",
       "number": "93",
       "date": "2018-09-10T13:10:30.072Z",
-      "status": "Wysłano!",
+      "status": "Przyjęto do realizacji!",
       "id": 1
     },
     {
@@ -221,7 +221,7 @@
       "street": "",
       "number": "",
       "date": "2018-09-12T10:22:42.627Z",
-      "status": "Zamówienie zostało złożone!",
+      "status": "Wysłano!",
       "id": 5
     },
     {
@@ -273,6 +273,144 @@
       "date": "2018-09-12T11:19:18.692Z",
       "status": "Zamówienie zostało złożone!",
       "id": 8
+    },
+    {
+      "dishesIds": [
+        1,
+        1,
+        1
+      ],
+      "firstName": "Artur",
+      "lastName": "Szaniawski",
+      "mobile": "",
+      "town": "lsaldalsd",
+      "street": "lsadlasd",
+      "number": "15",
+      "date": "2018-09-12T11:34:08.491Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 9
+    },
+    {
+      "dishesIds": [
+        1,
+        1
+      ],
+      "firstName": "Adam",
+      "lastName": "Malysz",
+      "mobile": "",
+      "town": "",
+      "street": "",
+      "number": "",
+      "date": "2018-09-12T12:08:32.368Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 10
+    },
+    {
+      "dishesIds": [
+        1,
+        1,
+        1
+      ],
+      "firstName": "Adasda",
+      "lastName": "",
+      "mobile": "",
+      "town": "",
+      "street": "",
+      "number": "",
+      "date": "2018-09-12T13:19:00.379Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 11
+    },
+    {
+      "dishesIds": [
+        1,
+        1
+      ],
+      "firstName": "Adam",
+      "lastName": "Malyusz",
+      "mobile": "45",
+      "town": "lsldal",
+      "street": "454",
+      "number": "545",
+      "date": "2018-09-12T13:21:53.876Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 12
+    },
+    {
+      "dishesIds": [],
+      "firstName": "adsa",
+      "lastName": "dasdas",
+      "mobile": "asdasda",
+      "town": "dasd",
+      "street": "asdasda",
+      "number": "asdasd",
+      "date": "2018-09-12T13:26:55.123Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 13
+    },
+    {
+      "dishesIds": [
+        1,
+        1
+      ],
+      "firstName": null,
+      "lastName": "sad",
+      "mobile": "asdasd",
+      "town": "asdas",
+      "street": "dasdasasd",
+      "number": "aasdasd",
+      "date": "2018-09-12T13:28:12.254Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 14
+    },
+    {
+      "dishesIds": [
+        1,
+        1
+      ],
+      "firstName": "dasda",
+      "lastName": "dasd",
+      "mobile": "asdasd",
+      "town": "asdasd",
+      "street": "asdasd",
+      "number": "asdasda",
+      "date": "2018-09-12T13:36:01.341Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 15
+    },
+    {
+      "dishesIds": [
+        1,
+        1,
+        1
+      ],
+      "firstName": "dasd",
+      "lastName": "asda",
+      "mobile": "da",
+      "town": "sdasda",
+      "street": "dasda",
+      "number": "dasda",
+      "date": "2018-09-12T13:36:37.819Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 16
+    },
+    {
+      "dishesIds": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "firstName": "cxz",
+      "lastName": "cxcx",
+      "mobile": "vcvcv",
+      "town": "cxcx",
+      "street": "cxcx",
+      "number": "cxcx",
+      "date": "2018-09-12T13:37:23.961Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 17
     }
   ],
   "users": [

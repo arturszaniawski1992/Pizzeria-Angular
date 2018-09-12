@@ -1,4 +1,4 @@
-<form [formGroup]="loginForm" class="login">
+<form [formGroup]="loginForm" class="login" (ngSubmit)="logIn()">
   <table class="orderFrom">
     <tr>
       <th></th>
@@ -12,6 +12,5 @@
       <td>HASŁO:</td>
       <td><input type="password" formControlName="password"></td>
     </tr>
-
   </table>
-  <button type="submit" (click)="logIn()">Zaloguj</button>
+  <button type="submit" [disabled]="!loginForm.valid" [ngClass]="{ 'invalid':!loginForm.valid }">Zaloguj</button>
