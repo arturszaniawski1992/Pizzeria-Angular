@@ -13,5 +13,6 @@
       <button href="#" (click)="removeDishFromCart(dish)">Usuń</button>
     </tr>
   </table>
+  <div>Koszt zamówienia: <output class="totalCost">{{calculateBasketCost()}}</output> </div>
   <button class="dish" [routerLink]="['/orders']">ZAMÓW</button>
 </div>

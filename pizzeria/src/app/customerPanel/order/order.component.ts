@@ -21,7 +21,7 @@ export class OrderComponent implements OnInit, OnDestroy {
 
   formToOrder = new FormGroup(
     {
-      firstName: new FormControl/*('', Validators.required)*/,
+      firstName: new FormControl('', Validators.required),
       lastName: new FormControl('', Validators.required),
       town: new FormControl('', Validators.required),
       street: new FormControl('', Validators.required),
@@ -36,7 +36,6 @@ export class OrderComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
   }
-
 
   addOrder(): void {
     this.getDishes();

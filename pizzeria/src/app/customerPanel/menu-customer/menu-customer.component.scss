@@ -34,6 +34,8 @@
 }
 
 .button {
+  border-radius: 5px;
+  margin: 25px;
   font: bold 25px Sylfaen;
   text-decoration: none;
   background-color: #EEEEEE;
@@ -47,10 +49,16 @@
 }
 
 .button:hover {
+  border-radius: 1px;
   font: bold 20px Sylfaen;
   background-color: seashell;
   padding: 2px;
   transition-duration: 1s;
 
+}
+
+.dishes{
+  background: firebrick;
+  text-align:center;
 }
 

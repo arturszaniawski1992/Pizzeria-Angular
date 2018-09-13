@@ -22,7 +22,7 @@ export class MenuCustomerComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.menuService.dishes$.pipe(
       takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
-    //this.menuService.getDishes();
+    this.menuService.getDishes();
   }
 
   getDishes() {
@@ -44,10 +44,8 @@ export class MenuCustomerComponent implements OnInit, OnDestroy {
     this.menuService.getDrinks();
   }
 
-
   addDishToCart(dish: Dish): void {
     this.cartService.addDishToCart(dish);
-
   }
 
   ngOnDestroy(): void {

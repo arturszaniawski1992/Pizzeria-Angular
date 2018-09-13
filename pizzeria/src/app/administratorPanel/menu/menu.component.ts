@@ -12,7 +12,7 @@ import {CartService} from '../../customerPanel/cart.service';
 })
 export class MenuComponent implements OnInit, OnDestroy {
 
-  dishes: Dish[];
+  dishes: Dish[] = [];
   private destroy$: Subject<void> = new Subject<void>();
 
   constructor(private readonly menuService: MenuService,
@@ -42,7 +42,6 @@ export class MenuComponent implements OnInit, OnDestroy {
 
   addDish(dish: Dish): void {
     this.cartService.addDishToCart(dish);
-
   }
 
 

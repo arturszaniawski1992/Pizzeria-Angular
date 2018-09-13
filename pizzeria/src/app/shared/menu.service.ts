@@ -62,11 +62,6 @@ export class MenuService {
     return this.httpclient.get<Dish>(`http://localhost:3000/dishes/${id}`);
   }
 
-  saveDish(dish: Dish) {
-    this.httpclient.post<Dish>('http://localhost:3000/dishes', dish).subscribe(
-      dishes => this.getDishes()
-    )
-  }
 
   changeAvailability(dish: Dish): Observable<Dish> {
     return this.httpclient.put<Dish>(`http://localhost:3000/dishes/${dish.id}`, dish);

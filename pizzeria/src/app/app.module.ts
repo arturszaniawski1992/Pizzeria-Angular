@@ -41,7 +41,7 @@ import {LogingService} from './administratorPanel/loging/loging.service';
     FormsModule,
     ReactiveFormsModule,
   ],
-  providers: [LogingService],
+  providers: [LogingService, HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule {

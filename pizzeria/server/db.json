@@ -99,7 +99,7 @@
     {
       "id": 13,
       "name": "Sok",
-      "isAvailable": false,
+      "isAvailable": true,
       "description": "pomaranczowy, bananowy, jabłkowy",
       "type": "napoj",
       "price": "14.00"
@@ -140,277 +140,35 @@
   "orders": [
     {
       "dishesIds": [
-        16,
-        11
+        7,
+        8
       ],
       "firstName": "Artur",
       "lastName": "Szaniawski",
-      "mobile": "512665332",
+      "mobile": "512322121",
       "town": "Poznan",
       "street": "Grochowska",
       "number": "93",
-      "date": "2018-09-10T13:10:30.072Z",
-      "status": "Przyjęto do realizacji!",
+      "date": "2018-09-13T07:27:55.917Z",
+      "status": "Wysłano!",
       "id": 1
     },
     {
       "dishesIds": [
-        15,
-        15,
-        15,
-        15
+        7,
+        8,
+        13,
+        12
       ],
-      "firstName": "Artur",
-      "lastName": "Szaniawski",
-      "mobile": "51254556",
-      "town": "Lukow",
-      "street": "Klimeckiego",
-      "number": "11",
-      "date": "2018-09-12T07:55:48.113Z",
-      "status": "Zamówienie zostało złożone!",
+      "firstName": "Adam",
+      "lastName": "Malysz",
+      "mobile": "878996565",
+      "town": "Wisla",
+      "street": "Gorksa",
+      "number": "12",
+      "date": "2018-09-13T07:28:29.579Z",
+      "status": "Wysłano!",
       "id": 2
-    },
-    {
-      "dishesIds": [
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "firstName": "dasdasd",
-      "lastName": "",
-      "mobile": "",
-      "town": "",
-      "street": "",
-      "number": "",
-      "date": "2018-09-12T08:26:30.691Z",
-      "status": "Wysłano!",
-      "id": 3
-    },
-    {
-      "dishesIds": [
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "firstName": "dasd",
-      "lastName": "",
-      "mobile": "",
-      "town": "",
-      "street": "sadasd",
-      "number": "",
-      "date": "2018-09-12T09:32:42.567Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 4
-    },
-    {
-      "dishesIds": [
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "firstName": "",
-      "lastName": "",
-      "mobile": "",
-      "town": "",
-      "street": "",
-      "number": "",
-      "date": "2018-09-12T10:22:42.627Z",
-      "status": "Wysłano!",
-      "id": 5
-    },
-    {
-      "dishesIds": [
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "firstName": "Adam",
-      "lastName": "Malysz",
-      "mobile": "789542112",
-      "town": "Krakow",
-      "street": "Wieliczkowska",
-      "number": "15",
-      "date": "2018-09-12T10:27:53.871Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 6
-    },
-    {
-      "dishesIds": [
-        1,
-        1
-      ],
-      "firstName": "sadaasd",
-      "lastName": "",
-      "mobile": "",
-      "town": "",
-      "street": "",
-      "number": "asdasd",
-      "date": "2018-09-12T11:13:54.174Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 7
-    },
-    {
-      "dishesIds": [
-        1,
-        2,
-        2,
-        1
-      ],
-      "firstName": "Artur",
-      "lastName": "Szaniawski",
-      "mobile": "",
-      "town": "Lukow",
-      "street": "",
-      "number": "",
-      "date": "2018-09-12T11:19:18.692Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 8
-    },
-    {
-      "dishesIds": [
-        1,
-        1,
-        1
-      ],
-      "firstName": "Artur",
-      "lastName": "Szaniawski",
-      "mobile": "",
-      "town": "lsaldalsd",
-      "street": "lsadlasd",
-      "number": "15",
-      "date": "2018-09-12T11:34:08.491Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 9
-    },
-    {
-      "dishesIds": [
-        1,
-        1
-      ],
-      "firstName": "Adam",
-      "lastName": "Malysz",
-      "mobile": "",
-      "town": "",
-      "street": "",
-      "number": "",
-      "date": "2018-09-12T12:08:32.368Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 10
-    },
-    {
-      "dishesIds": [
-        1,
-        1,
-        1
-      ],
-      "firstName": "Adasda",
-      "lastName": "",
-      "mobile": "",
-      "town": "",
-      "street": "",
-      "number": "",
-      "date": "2018-09-12T13:19:00.379Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 11
-    },
-    {
-      "dishesIds": [
-        1,
-        1
-      ],
-      "firstName": "Adam",
-      "lastName": "Malyusz",
-      "mobile": "45",
-      "town": "lsldal",
-      "street": "454",
-      "number": "545",
-      "date": "2018-09-12T13:21:53.876Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 12
-    },
-    {
-      "dishesIds": [],
-      "firstName": "adsa",
-      "lastName": "dasdas",
-      "mobile": "asdasda",
-      "town": "dasd",
-      "street": "asdasda",
-      "number": "asdasd",
-      "date": "2018-09-12T13:26:55.123Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 13
-    },
-    {
-      "dishesIds": [
-        1,
-        1
-      ],
-      "firstName": null,
-      "lastName": "sad",
-      "mobile": "asdasd",
-      "town": "asdas",
-      "street": "dasdasasd",
-      "number": "aasdasd",
-      "date": "2018-09-12T13:28:12.254Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 14
-    },
-    {
-      "dishesIds": [
-        1,
-        1
-      ],
-      "firstName": "dasda",
-      "lastName": "dasd",
-      "mobile": "asdasd",
-      "town": "asdasd",
-      "street": "asdasd",
-      "number": "asdasda",
-      "date": "2018-09-12T13:36:01.341Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 15
-    },
-    {
-      "dishesIds": [
-        1,
-        1,
-        1
-      ],
-      "firstName": "dasd",
-      "lastName": "asda",
-      "mobile": "da",
-      "town": "sdasda",
-      "street": "dasda",
-      "number": "dasda",
-      "date": "2018-09-12T13:36:37.819Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 16
-    },
-    {
-      "dishesIds": [
-        1,
-        1,
-        1,
-        1,
-        1
-      ],
-      "firstName": "cxz",
-      "lastName": "cxcx",
-      "mobile": "vcvcv",
-      "town": "cxcx",
-      "street": "cxcx",
-      "number": "cxcx",
-      "date": "2018-09-12T13:37:23.961Z",
-      "status": "Zamówienie zostało złożone!",
-      "id": 17
     }
   ],
   "users": [
