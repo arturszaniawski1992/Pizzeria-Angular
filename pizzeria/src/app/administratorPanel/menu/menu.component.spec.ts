@@ -25,8 +25,4 @@ describe('MenuComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  /*it('should get all dishes', async(() => {
-      expect(component.dishes.length).toEqual(15);
-    });*/
-
 });

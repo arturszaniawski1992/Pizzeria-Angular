@@ -169,6 +169,22 @@
       "date": "2018-09-13T07:28:29.579Z",
       "status": "Wysłano!",
       "id": 2
+    },
+    {
+      "dishesIds": [
+        1,
+        11,
+        10
+      ],
+      "firstName": "Jan",
+      "lastName": "Kowalski",
+      "mobile": "456778956",
+      "town": "Warszawa",
+      "street": "Bałtycka",
+      "number": "85/11",
+      "date": "2018-09-13T09:03:57.372Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 3
     }
   ],
   "users": [

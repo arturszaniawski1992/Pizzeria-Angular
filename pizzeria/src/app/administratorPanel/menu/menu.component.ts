@@ -3,7 +3,6 @@ import {Dish} from '../../model/dish';
 import {MenuService} from '../../shared/menu.service';
 import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
-import {CartService} from '../../customerPanel/cart.service';
 
 @Component({
   selector: 'app-menu',
@@ -15,8 +14,7 @@ export class MenuComponent implements OnInit, OnDestroy {
   dishes: Dish[] = [];
   private destroy$: Subject<void> = new Subject<void>();
 
-  constructor(private readonly menuService: MenuService,
-              private readonly  cartService: CartService) {
+  constructor(private readonly menuService: MenuService) {
   }
 
   ngOnInit() {
@@ -39,11 +37,6 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
     this.menuService.getDrinks();
   }
-
-  addDish(dish: Dish): void {
-    this.cartService.addDishToCart(dish);
-  }
-
 
   ngOnDestroy(): void {
     this.destroy$.next();
