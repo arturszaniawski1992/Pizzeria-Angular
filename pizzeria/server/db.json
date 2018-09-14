@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Pizza Margherita",
-      "isAvailable": true,
+      "isAvailable": false,
       "description": "Sos, ser",
       "type": "pizza",
       "price": "22.50"
@@ -138,38 +138,6 @@
     }
   ],
   "orders": [
-    {
-      "dishesIds": [
-        7,
-        8
-      ],
-      "firstName": "Artur",
-      "lastName": "Szaniawski",
-      "mobile": "512322121",
-      "town": "Poznan",
-      "street": "Grochowska",
-      "number": "93",
-      "date": "2018-09-13T07:27:55.917Z",
-      "status": "Wysłano!",
-      "id": 1
-    },
-    {
-      "dishesIds": [
-        7,
-        8,
-        13,
-        12
-      ],
-      "firstName": "Adam",
-      "lastName": "Malysz",
-      "mobile": "878996565",
-      "town": "Wisla",
-      "street": "Gorksa",
-      "number": "12",
-      "date": "2018-09-13T07:28:29.579Z",
-      "status": "Wysłano!",
-      "id": 2
-    },
     {
       "dishesIds": [
         1,

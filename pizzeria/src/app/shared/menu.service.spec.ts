@@ -53,135 +53,134 @@ describe('MenuService', () => {
     mockedBackend = TestBed.get(HttpTestingController);
   });
 
-
   it('should be created', () => {
     expect(service).toBeTruthy();
   });
 
   it('should get dish', () => {
-    //given
+    // given
     let dish: Dish;
-    //when
+    // when
     service.getDish(mockedPizza.id).subscribe(res => dish = res);
     mockedBackend.expectOne('http://localhost:3000/dishes/' + mockedPizza.id).flush(mockedPizza);
-    //then
+    // then
     expect(dish).toEqual(mockedPizza);
   });
 
   it('should get all available dishes',
     fakeAsync(() => {
-      //given
+      // given
       let dishes: Dish[] = [];
-      //when
+      // when
       loginServ.logedAsAdmin = false;
       service.dishes$.subscribe(ds => dishes = ds);
       service.getDishes();
       mockedBackend.expectOne('http://localhost:3000/dishes').flush(mockedDishes);
-      //then
+      // then
       expect(dishes.length).toEqual(1);
 
     }));
 
   it('should get all dishes when admin is logged',
     fakeAsync(() => {
-      //given
+      // given
       let dishes: Dish[] = [];
-      //when
+      // when
       loginServ.logedAsAdmin = true;
       service.dishes$.subscribe(ds => dishes = ds);
       service.getDishes();
       mockedBackend.expectOne('http://localhost:3000/dishes').flush(mockedDishes);
-      //then
+      // then
       expect(dishes).toEqual(mockedDishes);
     }));
 
 
   it('should get all available pizzas',
     fakeAsync(() => {
-      //given
+      // given
       let dishes: Dish[] = [];
-      //when
+      // when
       loginServ.logedAsAdmin = false;
       service.dishes$.subscribe(ds => dishes = ds);
       service.getPizza();
       mockedBackend.expectOne('http://localhost:3000/dishes?type=pizza').flush(mockedDishes);
-      //then
+      // then
       expect(dishes.length).toEqual(1);
     }));
 
   it('should get all pizzas when admin is logged',
     fakeAsync(() => {
-      //given
+      // given
       let dishes: Dish[] = [];
-      //when
+      // when
       loginServ.logedAsAdmin = true;
       service.dishes$.subscribe(ds => dishes = ds);
       service.getPizza();
       mockedBackend.expectOne('http://localhost:3000/dishes?type=pizza').flush(mockedDishes);
-      //then
+      // then
       expect(dishes).toEqual(mockedDishes);
     }));
 
   it('should get all available spaghetti',
     fakeAsync(() => {
-      //given
+      // given
       let dishes: Dish[] = [];
-      //when
+      // when
       loginServ.logedAsAdmin = false;
       service.dishes$.subscribe(ds => dishes = ds);
       service.getPasta();
       mockedBackend.expectOne('http://localhost:3000/dishes?type=spaghetti').flush(mockedDishes);
-      //then
+      // then
       expect(dishes.length).toEqual(1);
     }));
 
   it('should get all spaghetti when admin is logged',
     fakeAsync(() => {
-      //given
+      // given
       let dishes: Dish[] = [];
-      //when
+      // when
       loginServ.logedAsAdmin = true;
       service.dishes$.subscribe(ds => dishes = ds);
       service.getPasta();
       mockedBackend.expectOne('http://localhost:3000/dishes?type=spaghetti').flush(mockedDishes);
-      //then
+      // then
       expect(dishes).toEqual(mockedDishes);
     }));
 
   it('should get all available drinks',
     fakeAsync(() => {
-      //given
+      // given
       let dishes: Dish[] = [];
-      //when
+      // when
       loginServ.logedAsAdmin = false;
       service.dishes$.subscribe(ds => dishes = ds);
       service.getDrinks();
       mockedBackend.expectOne('http://localhost:3000/dishes?type=napoj').flush(mockedDishes);
-      //then
+      // then
       expect(dishes.length).toEqual(1);
     }));
 
 
   it('should get all drinks when admin is logged',
     fakeAsync(() => {
-      //given
+      // given
       let dishes: Dish[] = [];
-      //when
+      // when
       loginServ.logedAsAdmin = true;
       service.dishes$.subscribe(ds => dishes = ds);
       service.getDrinks();
       mockedBackend.expectOne('http://localhost:3000/dishes?type=napoj').flush(mockedDishes);
-      //then
+      // then
       expect(dishes).toEqual(mockedDishes);
     }));
 
   it('should change availability of dish', () => {
-    //given
+    // given
     let dish: Dish = {} as Dish;
-    //when
+    // when
     service.changeAvailability(mockedPizza).subscribe(res => dish = res);
     mockedBackend.expectOne('http://localhost:3000/dishes/' + mockedPizza.id).flush(mockedPizza);
-    //then
+    // then
     expect(dish).toEqual(mockedPizza);
   });
 

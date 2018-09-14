@@ -30,5 +30,9 @@ export class OrderService {
     return this.httpclient.get<Order>(`http://localhost:3000/orders/${id}`);
   }
 
+  removeOrder(id: number): Observable<Order> {
+    return this.httpclient.delete<Order>(`http://localhost:3000/orders/${id}`);
+  }
+
 
 }

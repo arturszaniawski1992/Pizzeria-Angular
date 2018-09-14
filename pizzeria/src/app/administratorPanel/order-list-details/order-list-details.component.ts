@@ -11,7 +11,7 @@ import {OrderService} from '../../shared/order.service';
 })
 export class OrderListDetailsComponent implements OnInit, OnDestroy {
 
-  order: Order;
+  order: Order = {} as Order;
   private destroy$: Subject<void> = new Subject<void>();
 
   constructor(
@@ -35,6 +35,9 @@ export class OrderListDetailsComponent implements OnInit, OnDestroy {
   changeOrderStatusIssued() {
     this.order.status = 'Wysłano!';
     this.orderService.changeStatusOfOrder(this.order).subscribe();
+  }
+  removeOrder(){
+    this.orderService.removeOrder(this.order.id).subscribe();
   }
 
   ngOnDestroy(): void {

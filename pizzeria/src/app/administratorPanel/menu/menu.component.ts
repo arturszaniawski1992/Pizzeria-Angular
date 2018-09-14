@@ -23,17 +23,22 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.menuService.getDishes();
   }
 
-  getPizza(event: Event) {
+  getDishes() {
+    this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
+    this.menuService.getDishes();
+  }
+
+  getPizza() {
     this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
     this.menuService.getPizza();
   }
 
-  getPasta(event: Event) {
+  getPasta() {
     this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
     this.menuService.getPasta();
   }
 
-  getDrinks(event: Event) {
+  getDrinks() {
     this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
     this.menuService.getDrinks();
   }
