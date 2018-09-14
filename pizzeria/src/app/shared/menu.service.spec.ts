@@ -184,4 +184,14 @@ describe('MenuService', () => {
     expect(dish).toEqual(mockedPizza);
   });
 
+  it('should add dish to menu', () => {
+    // given
+    let dish: Dish = {} as Dish;
+    // when
+    service.addDish(mockedPizza).subscribe(res => dish = res);
+    mockedBackend.expectOne('http://localhost:3000/dishes').flush(mockedPizza);
+    // then
+    expect(dish).toEqual(mockedPizza);
+  });
+
 });

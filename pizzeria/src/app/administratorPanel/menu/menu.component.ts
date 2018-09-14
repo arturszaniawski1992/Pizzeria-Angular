@@ -3,7 +3,7 @@ import {Dish} from '../../model/dish';
 import {MenuService} from '../../shared/menu.service';
 import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
-import {FormControl, FormGroup, Validators} from "@angular/forms";
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-menu',
@@ -12,11 +12,13 @@ import {FormControl, FormGroup, Validators} from "@angular/forms";
 })
 export class MenuComponent implements OnInit, OnDestroy {
 
+  dish: Dish = {} as Dish;
   dishes: Dish[] = [];
   private destroy$: Subject<void> = new Subject<void>();
 
 
-  constructor(private readonly menuService: MenuService) {
+  constructor(private readonly menuService: MenuService,
+              private readonly router: Router) {
   }
 
   ngOnInit() {
@@ -45,6 +47,11 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.menuService.getDrinks();
   }
 
+  removeDish() {
+    this.menuService.removeDish(this.dish.id).subscribe();
+    this.router.navigate(['/admin']);
+    alert('Danie zostalo usunięte!');
+  }
 
   ngOnDestroy(): void {
     this.destroy$.next();

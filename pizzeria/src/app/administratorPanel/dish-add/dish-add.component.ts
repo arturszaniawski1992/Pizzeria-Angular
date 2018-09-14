@@ -2,7 +2,7 @@ import {Component, OnInit} from '@angular/core';
 import {MenuService} from '../../shared/menu.service';
 import {Dish} from '../../model/dish';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {Order} from "../../model/order";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-dish-add',
@@ -23,7 +23,8 @@ export class DishAddComponent implements OnInit {
     }
   )
 
-  constructor(private readonly menuService: MenuService) {
+  constructor(private readonly menuService: MenuService,
+              private readonly router: Router) {
   }
 
   ngOnInit() {
@@ -31,12 +32,8 @@ export class DishAddComponent implements OnInit {
 
   addDish(): void {
     this.dish = this.addDishForm.value;
-/*    this.dish.name = this.addDishForm.get('Nazwa').value;
-    this.dish.isAvailable = this.addDishForm.get('Dostepność').value;
-    this.dish.description = this.addDishForm.get('Opis').value;
-    this.dish.type = this.addDishForm.get('Typ dania').value;
-    this.dish.price = this.addDishForm.get('Cena').value;*/
     this.menuService.addDish(this.dish).subscribe();
+    this.router.navigate(['/admin']);
     alert('Danie zostało dodane do menu!');
   }
 

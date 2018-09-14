@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Pizza Margherita",
-      "isAvailable": false,
+      "isAvailable": true,
       "description": "Sos, ser",
       "type": "pizza",
       "price": "22.50"
@@ -135,9 +135,50 @@
       "description": "piwo 0.5L -- 5,1%",
       "type": "napoj",
       "price": "10.00"
+    },
+    {
+      "name": "asd",
+      "isAvailable": false,
+      "description": "das",
+      "type": "asda",
+      "price": "asd",
+      "id": 18
+    },
+    {
+      "name": "Pizza Hawajska",
+      "isAvailable": "false",
+      "description": "sos bolonski, ananas",
+      "type": "pizza",
+      "price": "25.0",
+      "id": 19
+    },
+    {
+      "name": "Pizza Wegetarianska",
+      "isAvailable": "true",
+      "description": "same warzywa",
+      "type": "pizza",
+      "price": "12",
+      "id": 20
     }
   ],
-  "orders": [],
+  "orders": [
+    {
+      "dishesIds": [
+        1,
+        1,
+        1
+      ],
+      "firstName": "Henryk",
+      "lastName": "Sienkiewicz",
+      "mobile": "789456456",
+      "town": "Warszawa",
+      "street": "Północna",
+      "number": "45/4",
+      "date": "2018-09-14T11:47:52.605Z",
+      "status": "Wysłano!",
+      "id": 1
+    }
+  ],
   "users": [
     {
       "id": 1,
