@@ -31,7 +31,7 @@ export class OrderService {
   }
 
   removeOrder(id: number): Observable<Order> {
-    return this.httpclient.delete<Order>(`http://localhost:3000/orders/${id}`);
+    return this.httpclient.delete<Order>(`http://localhost:3000/orders/${id}` );
   }
 
 

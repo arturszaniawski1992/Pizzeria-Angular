@@ -4,6 +4,7 @@ import {HttpClient} from '@angular/common/http';
 import {Observable, Subject} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {LogingService} from '../administratorPanel/loging/loging.service';
+import {Order} from "../model/order";
 
 @Injectable({
   providedIn: 'root'
@@ -64,6 +65,10 @@ export class MenuService {
 
   changeAvailability(dish: Dish): Observable<Dish> {
     return this.httpclient.put<Dish>(`http://localhost:3000/dishes/${dish.id}`, dish);
+  }
+
+  addDish(dish: Dish): Observable<Dish> {
+    return this.httpclient.post<Dish>('http://localhost:3000/dishes', dish);
   }
 
 

@@ -3,6 +3,7 @@ import {Dish} from '../../model/dish';
 import {MenuService} from '../../shared/menu.service';
 import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
+import {FormControl, FormGroup, Validators} from "@angular/forms";
 
 @Component({
   selector: 'app-menu',
@@ -13,6 +14,7 @@ export class MenuComponent implements OnInit, OnDestroy {
 
   dishes: Dish[] = [];
   private destroy$: Subject<void> = new Subject<void>();
+
 
   constructor(private readonly menuService: MenuService) {
   }
@@ -42,6 +44,7 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.menuService.dishes$.pipe(takeUntil(this.destroy$)).subscribe(dishes => this.dishes = dishes);
     this.menuService.getDrinks();
   }
+
 
   ngOnDestroy(): void {
     this.destroy$.next();

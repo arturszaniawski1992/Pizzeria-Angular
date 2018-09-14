@@ -9,6 +9,7 @@ import {LogingComponent} from './administratorPanel/loging/loging.component';
 import {MenuCustomerComponent} from './customerPanel/menu-customer/menu-customer.component';
 import {OrderListComponent} from './administratorPanel/order-list/order-list.component';
 import {OrderListDetailsComponent} from './administratorPanel/order-list-details/order-list-details.component';
+import {DishAddComponent} from "./administratorPanel/dish-add/dish-add.component";
 
 const routes: Routes = [
   {path: 'dishes', component: MenuCustomerComponent},
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'orders', component: OrderComponent},
   {path: 'cart', component: CartComponent},
   {path: 'login', component: LogingComponent},
+  {path: 'addDish', component: DishAddComponent, canActivate: [AuthGuardService]},
 ]
 
 @NgModule({

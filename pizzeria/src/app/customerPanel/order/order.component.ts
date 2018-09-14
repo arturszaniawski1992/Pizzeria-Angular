@@ -37,6 +37,7 @@ export class OrderComponent implements OnInit, OnDestroy {
   ngOnInit() {
   }
 
+
   addOrder(): void {
     this.getDishes();
     this.order.dishesIds = this.dishesIds;

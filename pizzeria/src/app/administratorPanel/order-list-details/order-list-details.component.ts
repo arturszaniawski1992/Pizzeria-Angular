@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subject} from 'rxjs';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Route, Router} from '@angular/router';
 import {Order} from '../../model/order';
 import {OrderService} from '../../shared/order.service';
 
@@ -16,6 +16,7 @@ export class OrderListDetailsComponent implements OnInit, OnDestroy {
 
   constructor(
     private readonly route: ActivatedRoute,
+    private readonly router: Router,
     private readonly orderService: OrderService,
   ) {
   }
@@ -36,8 +37,12 @@ export class OrderListDetailsComponent implements OnInit, OnDestroy {
     this.order.status = 'Wysłano!';
     this.orderService.changeStatusOfOrder(this.order).subscribe();
   }
-  removeOrder(){
+
+  removeOrder() {
     this.orderService.removeOrder(this.order.id).subscribe();
+    this.router.navigate(['/admin']);
+    alert('Zamowienie zostalo usunięte!');
+
   }
 
   ngOnDestroy(): void {

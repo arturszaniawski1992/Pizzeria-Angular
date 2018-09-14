@@ -1,0 +1,32 @@
+<form [formGroup]="addDishForm" class="orderForm" (ngSubmit)="addDish()">
+  <h2>Dodaj danie</h2>
+  <table class="orderFrom">
+    <tr>
+      <td>Nazwa:</td>
+      <td><input type="text" formControlName="name"></td>
+    </tr>
+    <tr>
+      <td>Dostepność:</td>
+      <td><input type="text" formControlName="isAvailable"></td>
+    </tr>
+    <tr>
+      <td>Opis:</td>
+      <td><input type="text" formControlName="description"></td>
+    </tr>
+    <tr>
+      <td>Typ dania:</td>
+      <td><input type="text" formControlName="type"></td>
+    </tr>
+    <tr>
+      <td>Cena:</td>
+      <td><input type="text" formControlName="price"></td>
+    </tr>
+  </table>
+  <button type="submit" [disabled]="!addDishForm.valid" [ngClass]="{ 'invalid':!addDishForm.valid }">Dodaj danie
+  </button>
+</form>
+
+
+
+
+

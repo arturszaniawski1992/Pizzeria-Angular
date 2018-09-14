@@ -18,6 +18,7 @@ import {MenuCustomerComponent} from './customerPanel/menu-customer/menu-customer
 import {OrderListComponent} from './administratorPanel/order-list/order-list.component';
 import { OrderListDetailsComponent } from './administratorPanel/order-list-details/order-list-details.component';
 import {LogingService} from './administratorPanel/loging/loging.service';
+import { DishAddComponent } from './administratorPanel/dish-add/dish-add.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {LogingService} from './administratorPanel/loging/loging.service';
     LogingComponent,
     MenuCustomerComponent,
     OrderListComponent,
-    OrderListDetailsComponent
+    OrderListDetailsComponent,
+    DishAddComponent
   ],
   imports: [
     BrowserModule,
