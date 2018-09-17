@@ -70,8 +70,10 @@ export class MenuService {
     return this.httpclient.post<Dish>('http://localhost:3000/dishes', dish);
   }
 
-  removeDish(id: number): Observable<Dish> {
-    return this.httpclient.delete<Dish>(`http://localhost:3000/dishes/${id}` );
+  removeDish(id: number): void {
+    this.httpclient.delete<Dish>(`http://localhost:3000/dishes/${id}` ).subscribe(
+      res => this.getDishes()
+    );
   }
 
 

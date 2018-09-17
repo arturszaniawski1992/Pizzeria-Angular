@@ -1,4 +1,4 @@
-import {Injectable} from '@angular/core';
+import {asNativeElements, Injectable} from '@angular/core';
 import {User} from '../../model/user';
 import {HttpClient} from '@angular/common/http';
 import {Subject} from 'rxjs';
@@ -14,6 +14,9 @@ export class LogingService {
 
   constructor(readonly httpclient: HttpClient,
               private readonly route: Router) {
+    if (sessionStorage.getItem('admin')) {
+      this.logedAsAdmin = true;
+    }
   }
 
   getUsers(): void {
@@ -22,13 +25,16 @@ export class LogingService {
 
   logIn(answer: boolean) {
     this.logedAsAdmin = answer;
+    sessionStorage.setItem('admin', 'true')
     this.route.navigate(['/admin']);
   }
 
   logOut() {
     this.logedAsAdmin = false;
-    alert('You have been logged!')
+    alert('You have been logged!');
+    sessionStorage.removeItem('admin');
     this.route.navigate(['/']);
+
   }
 
 

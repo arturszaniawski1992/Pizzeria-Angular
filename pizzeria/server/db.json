@@ -1,54 +1,6 @@
 {
   "dishes": [
     {
-      "id": 1,
-      "name": "Pizza Margherita",
-      "isAvailable": true,
-      "description": "Sos, ser",
-      "type": "pizza",
-      "price": "22.50"
-    },
-    {
-      "id": 2,
-      "name": "Pizza Funghi",
-      "isAvailable": true,
-      "description": "Sos, ser, pieczarki",
-      "type": "pizza",
-      "price": "23.50"
-    },
-    {
-      "id": 3,
-      "name": "Pizza Wiejska",
-      "isAvailable": true,
-      "description": "Sos, ser, pieczarki, kielbasa",
-      "type": "pizza",
-      "price": "21.00"
-    },
-    {
-      "id": 4,
-      "name": "Pizza Wegetarianska",
-      "isAvailable": true,
-      "description": "Sos, ser, pieczarki, papryka, pomidory",
-      "type": "pizza",
-      "price": "22.50"
-    },
-    {
-      "id": 5,
-      "name": "Pizza Party",
-      "isAvailable": true,
-      "description": "Sos, ser, pieczarki",
-      "type": "pizza",
-      "price": "23.50"
-    },
-    {
-      "id": 6,
-      "name": "Spagetti Bolognese",
-      "isAvailable": false,
-      "description": "Sos boloński",
-      "type": "spaghetti",
-      "price": "14.00"
-    },
-    {
       "id": 7,
       "name": "Spagetti Siciliana",
       "isAvailable": true,
@@ -71,14 +23,6 @@
       "description": "Sos serowo-smietanoy",
       "type": "spaghetti",
       "price": "16.00"
-    },
-    {
-      "id": 10,
-      "name": "Spagetti Spinacci",
-      "isAvailable": true,
-      "description": "Sos szpinakowy z kurczakiem",
-      "type": "spaghetti",
-      "price": "12.00"
     },
     {
       "id": 11,
@@ -159,24 +103,41 @@
       "type": "pizza",
       "price": "12",
       "id": 20
+    },
+    {
+      "name": "Pizza Poznanska",
+      "isAvailable": "true",
+      "description": "kielbasa",
+      "type": "pizza",
+      "price": "25",
+      "id": 21
+    },
+    {
+      "name": "Pizza Schabowa",
+      "isAvailable": "true",
+      "description": "schab pieczony, ser",
+      "type": "pizza",
+      "price": "55.50",
+      "id": 22
     }
   ],
   "orders": [
     {
       "dishesIds": [
         1,
-        1,
-        1
+        2,
+        2,
+        13
       ],
       "firstName": "Henryk",
       "lastName": "Sienkiewicz",
-      "mobile": "789456456",
-      "town": "Warszawa",
-      "street": "Północna",
-      "number": "45/4",
-      "date": "2018-09-14T11:47:52.605Z",
-      "status": "Wysłano!",
-      "id": 1
+      "mobile": "798779898",
+      "town": "Lublin",
+      "street": "Kosyzkowa",
+      "number": "78/85",
+      "date": "2018-09-17T06:31:30.165Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 2
     }
   ],
   "users": [

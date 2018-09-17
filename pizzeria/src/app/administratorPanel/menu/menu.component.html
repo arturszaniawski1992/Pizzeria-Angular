@@ -15,7 +15,7 @@
     <td>{{dish.name}}</td>
     <td>{{dish.description}}</td>
     <td>{{dish.price}}</td>
-    <button class="dish" (click)="removeDish()">X</button>
+    <button class="dish" (click)="removeDish(dish.id)">X</button>
     <td>
       <button class="dish" [routerLink]="['dish-details', dish.id]">
         Szczegóły i edycja

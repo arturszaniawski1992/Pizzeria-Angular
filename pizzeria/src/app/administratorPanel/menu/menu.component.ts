@@ -47,8 +47,8 @@ export class MenuComponent implements OnInit, OnDestroy {
     this.menuService.getDrinks();
   }
 
-  removeDish() {
-    this.menuService.removeDish(this.dish.id).subscribe();
+  removeDish(id) {
+    this.menuService.removeDish(id);
     this.router.navigate(['/admin']);
     alert('Danie zostalo usunięte!');
   }
