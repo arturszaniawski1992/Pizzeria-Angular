@@ -1,28 +1,12 @@
 {
   "dishes": [
     {
-      "id": 11,
-      "name": "Spagetti Grzybowe",
-      "isAvailable": true,
-      "description": "Sos smietanowo-kurkowy",
-      "type": "spaghetti",
-      "price": "24.00"
-    },
-    {
       "id": 13,
       "name": "Sok",
       "isAvailable": true,
       "description": "pomaranczowy, bananowy, jabłkowy",
       "type": "napoj",
       "price": "14.00"
-    },
-    {
-      "id": 14,
-      "name": "Sprite",
-      "isAvailable": false,
-      "description": "napoj 1L",
-      "type": "napoj",
-      "price": "8.00"
     },
     {
       "id": 15,
@@ -103,6 +87,14 @@
       "type": "pizza",
       "price": "25",
       "id": 25
+    },
+    {
+      "name": "Spaghetti Francuskie",
+      "isAvailable": "true",
+      "description": "ślimaki i inne niedobre rzeczy",
+      "type": "spaghetti",
+      "price": "16.00",
+      "id": 26
     }
   ],
   "orders": [
@@ -118,7 +110,7 @@
       "street": "Warszawska",
       "number": "15",
       "date": "2018-09-17T10:37:16.826Z",
-      "status": "Zamówienie zostało złożone!",
+      "status": "Przyjęto do realizacji!",
       "id": 4
     },
     {
@@ -135,6 +127,22 @@
       "date": "2018-09-17T11:41:43.325Z",
       "status": "Zamówienie zostało złożone!",
       "id": 5
+    },
+    {
+      "dishesIds": [
+        13,
+        13,
+        20
+      ],
+      "firstName": "Andrzej",
+      "lastName": "Duda",
+      "mobile": "28546972",
+      "town": "Warszawa",
+      "street": "Wiejska",
+      "number": "111",
+      "date": "2018-09-17T13:29:16.293Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 6
     }
   ],
   "users": [

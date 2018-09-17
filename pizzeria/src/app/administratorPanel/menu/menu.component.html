@@ -3,7 +3,7 @@
 <button class="button" href="#" (click)="getDrinks($event)">NAPOJE</button>
 <button class="button" [routerLink]="['/admin/order-list']">ZAMÓWIENIA</button>
 <button class="button" [routerLink]="['/addDish']">Dodaj danie</button>
-  <br>
+<br>
 <br>
 <table class="menu">
   <tr>
@@ -15,9 +15,9 @@
     <td>{{dish.name}}</td>
     <td>{{dish.description}}</td>
     <td>{{dish.price}}</td>
-    <button class="dish" (click)="removeDish(dish.id)">X</button>
     <td>
-      <button class="dish" [routerLink]="['dish-details', dish.id]">
+      <button class="error" (click)="removeDish(dish.id)" alert>Usuń</button>
+      <button [routerLink]="['dish-details', dish.id]">
         Szczegóły i edycja
       </button>
     </td>

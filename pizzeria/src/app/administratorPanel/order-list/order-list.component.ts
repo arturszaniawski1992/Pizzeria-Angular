@@ -1,9 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Order} from '../../model/order';
 import {Subject} from 'rxjs';
-import {takeUntil, timeInterval} from 'rxjs/operators';
+import {takeUntil} from 'rxjs/operators';
 import {OrderService} from '../../services/order.service';
-import {log} from 'util';
 
 @Component({
   selector: 'app-order-list',
@@ -14,7 +13,7 @@ export class OrderListComponent implements OnInit, OnDestroy {
 
   orders: Order[];
   private destroy$: Subject<void> = new Subject<void>();
-  private intervalTime: NodeJS.Timer;
+  private intervalTime: any;
 
   constructor(private readonly orderService: OrderService) {
   }
@@ -28,7 +27,7 @@ export class OrderListComponent implements OnInit, OnDestroy {
         .pipe(takeUntil(this.destroy$))
         .subscribe(orders => this.orders = orders);
       this.orderService.getOrders();
-      log('Refresh working!');
+      console.log('Refresh working!');
     }, 20000);
   }
 

@@ -49,7 +49,8 @@ describe('MenuComponent', () => {
     getDishes: jasmine.createSpy('getDishes'),
     getPizza: jasmine.createSpy('getPizza'),
     getPasta: jasmine.createSpy('getPasta'),
-    getDrinks: jasmine.createSpy('getDrinks')
+    getDrinks: jasmine.createSpy('getDrinks'),
+    removeDish: jasmine.createSpy('removeDish'),
   };
 
   beforeEach(async(() => {
@@ -99,6 +100,13 @@ describe('MenuComponent', () => {
     component.getDrinks();
     // then
     expect(menuServiceMock.getDrinks).toHaveBeenCalled();
+  });
+
+  it('should get all drinks', () => {
+    // when
+    component.removeDish(mockedPizza.id);
+    // then
+    expect(menuServiceMock.removeDish).toHaveBeenCalled();
   });
 
 

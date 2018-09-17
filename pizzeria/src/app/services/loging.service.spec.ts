@@ -31,16 +31,4 @@ describe('LogingService', () => {
   }));
 
 
-  it('should get all users',
-    fakeAsync(() => {
-      // given
-      let users: User[] = [];
-      // when
-      loginServ.users$.subscribe(us => users = us);
-      loginServ.getUsers();
-      mockedBackend.expectOne('http://localhost:3000/users').flush(mockedUsers);
-      // then
-      expect(users.length).toEqual(2);
-    }));
-
 });
