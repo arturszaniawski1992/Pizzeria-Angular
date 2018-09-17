@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Dish} from '../../model/dish';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
 import {MenuService} from '../../services/menu.service';
 import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
@@ -19,6 +19,7 @@ export class DishDetailComponent implements OnInit, OnDestroy {
   constructor(
     private readonly route: ActivatedRoute,
     private readonly menuService: MenuService,
+    private readonly router: Router,
   ) {
   }
 
@@ -37,6 +38,7 @@ export class DishDetailComponent implements OnInit, OnDestroy {
   editDish() {
     this.menuService.editDish(this.dish).pipe(takeUntil(this.destroy$)).subscribe();
     alert('Dish has been edited!');
+    this.router.navigate(['/admin']);
   }
 
   ngOnDestroy(): void {
