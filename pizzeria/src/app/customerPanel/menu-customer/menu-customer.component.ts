@@ -1,8 +1,8 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Dish} from '../../model/dish';
 import {Subject} from 'rxjs';
-import {MenuService} from '../../shared/menu.service';
-import {CartService} from '../cart.service';
+import {MenuService} from '../../services/menu.service';
+import {CartService} from '../../services/cart.service';
 import {takeUntil} from 'rxjs/operators';
 
 @Component({

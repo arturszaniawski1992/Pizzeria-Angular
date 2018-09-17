@@ -1,5 +1,5 @@
 import {asNativeElements, Injectable} from '@angular/core';
-import {User} from '../../model/user';
+import {User} from '../model/user';
 import {HttpClient} from '@angular/common/http';
 import {Subject} from 'rxjs';
 import {Router} from '@angular/router';
@@ -23,9 +23,9 @@ export class LogingService {
     this.httpclient.get<User[]>('http://localhost:3000/users').subscribe(users => this.users$.next(users));
   }
 
-  logIn(answer: boolean) {
-    this.logedAsAdmin = answer;
-    sessionStorage.setItem('admin', 'true')
+  logIn() {
+    this.logedAsAdmin = true;
+    sessionStorage.setItem('admin', 'true');
     this.route.navigate(['/admin']);
   }
 

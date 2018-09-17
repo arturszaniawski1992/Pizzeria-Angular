@@ -4,7 +4,7 @@ import {MenuService} from './menu.service';
 import {Dish} from '../model/dish';
 import {HttpClientTestingModule, HttpTestingController} from '@angular/common/http/testing';
 import {RouterTestingModule} from '@angular/router/testing';
-import {LogingService} from '../administratorPanel/loging/loging.service';
+import {LogingService} from './loging.service';
 
 describe('MenuService', () => {
 

@@ -1,15 +1,16 @@
-import {Component, OnInit} from '@angular/core';
-import {MenuService} from '../../shared/menu.service';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {MenuService} from '../../services/menu.service';
 import {Dish} from '../../model/dish';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
-import {Router} from "@angular/router";
+import {Router} from '@angular/router';
+import {Subject} from 'rxjs';
 
 @Component({
   selector: 'app-dish-add',
   templateUrl: './dish-add.component.html',
   styleUrls: ['./dish-add.component.scss']
 })
-export class DishAddComponent implements OnInit {
+export class DishAddComponent implements OnInit, OnDestroy {
 
   dish: Dish = {} as Dish;
 
@@ -27,6 +28,8 @@ export class DishAddComponent implements OnInit {
               private readonly router: Router) {
   }
 
+  private destroy$: Subject<void> = new Subject<void>();
+
   ngOnInit() {
   }
 
@@ -35,6 +38,11 @@ export class DishAddComponent implements OnInit {
     this.menuService.addDish(this.dish).subscribe();
     this.router.navigate(['/admin']);
     alert('Danie zostało dodane do menu!');
+  }
+
+  ngOnDestroy(): void {
+    this.destroy$.next();
+    this.destroy$.complete();
   }
 
 }

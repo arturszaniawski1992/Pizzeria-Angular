@@ -13,6 +13,6 @@
       <button href="#" (click)="removeDishFromCart(dish)">Usuń</button>
     </tr>
   </table>
-  <div>Koszt zamówienia: <output class="totalCost">{{calculateBasketCost()}}</output> </div>
-  <button class="dish" [routerLink]="['/orders']">ZAMÓW</button>
+  <div> Koszt zamówienia:  <output class="totalCost">{{calculateBasketCost()}}</output> </div>
+  <button class="button" [routerLink]="['/orders']" *ngIf="dishes.length>0">ZAMÓW</button>
 </div>

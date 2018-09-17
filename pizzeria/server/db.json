@@ -1,33 +1,9 @@
 {
   "dishes": [
     {
-      "id": 7,
-      "name": "Spagetti Siciliana",
-      "isAvailable": true,
-      "description": "Sos boloński z szynką i kukurydzą",
-      "type": "spaghetti",
-      "price": "17.50"
-    },
-    {
-      "id": 8,
-      "name": "Spagetti Bolognese",
-      "isAvailable": true,
-      "description": "Sos boloński",
-      "type": "spaghetti",
-      "price": "14.00"
-    },
-    {
-      "id": 9,
-      "name": "Spagetti Carbonarra",
-      "isAvailable": false,
-      "description": "Sos serowo-smietanoy",
-      "type": "spaghetti",
-      "price": "16.00"
-    },
-    {
       "id": 11,
       "name": "Spagetti Mushrooms",
-      "isAvailable": true,
+      "isAvailable": false,
       "description": "sos kurkowo-smietanowy",
       "type": "spaghetti",
       "price": "15.00"
@@ -35,7 +11,7 @@
     {
       "id": 12,
       "name": "Spagetti Carbonarra",
-      "isAvailable": true,
+      "isAvailable": false,
       "description": "Sos boloński",
       "type": "spagetti",
       "price": "12.00"
@@ -81,14 +57,6 @@
       "price": "10.00"
     },
     {
-      "name": "asd",
-      "isAvailable": false,
-      "description": "das",
-      "type": "asda",
-      "price": "asd",
-      "id": 18
-    },
-    {
       "name": "Pizza Hawajska",
       "isAvailable": "false",
       "description": "sos bolonski, ananas",
@@ -119,25 +87,62 @@
       "type": "pizza",
       "price": "55.50",
       "id": 22
+    },
+    {
+      "name": "Pizza Dobra",
+      "isAvailable": false,
+      "description": "dobra pizza najlepsza",
+      "type": "pizza",
+      "price": "45",
+      "id": 23
+    },
+    {
+      "name": "Spaghetti Carbonarra",
+      "isAvailable": "true",
+      "description": "sos smietanowy",
+      "type": "spaghetti",
+      "price": "12",
+      "id": 24
+    },
+    {
+      "name": "Pizza Swojska",
+      "isAvailable": "true",
+      "description": "kielbasa, pomidory",
+      "type": "pizza",
+      "price": "25",
+      "id": 25
     }
   ],
   "orders": [
     {
       "dishesIds": [
-        1,
-        2,
-        2,
+        11,
+        12
+      ],
+      "firstName": "Adam",
+      "lastName": "Malysz",
+      "mobile": "854656221",
+      "town": "Wisła",
+      "street": "Górska",
+      "number": "15/78",
+      "date": "2018-09-17T09:21:58.975Z",
+      "status": "Przyjęto do realizacji!",
+      "id": 3
+    },
+    {
+      "dishesIds": [
+        13,
         13
       ],
-      "firstName": "Henryk",
-      "lastName": "Sienkiewicz",
-      "mobile": "798779898",
-      "town": "Lublin",
-      "street": "Kosyzkowa",
-      "number": "78/85",
-      "date": "2018-09-17T06:31:30.165Z",
+      "firstName": "Artur",
+      "lastName": "Szaniawski",
+      "mobile": "789456123",
+      "town": "Łuków",
+      "street": "Warszawska",
+      "number": "15",
+      "date": "2018-09-17T10:37:16.826Z",
       "status": "Zamówienie zostało złożone!",
-      "id": 2
+      "id": 4
     }
   ],
   "users": [

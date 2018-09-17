@@ -1,6 +1,6 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Dish} from '../../model/dish';
-import {MenuService} from '../../shared/menu.service';
+import {MenuService} from '../../services/menu.service';
 import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
 import {Router} from '@angular/router';

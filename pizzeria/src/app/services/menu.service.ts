@@ -3,7 +3,7 @@ import {Dish} from '../model/dish';
 import {HttpClient} from '@angular/common/http';
 import {Observable, Subject} from 'rxjs';
 import {map} from 'rxjs/operators';
-import {LogingService} from '../administratorPanel/loging/loging.service';
+import {LogingService} from './loging.service';
 
 @Injectable({
   providedIn: 'root'

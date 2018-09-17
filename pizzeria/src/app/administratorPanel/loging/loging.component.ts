@@ -1,5 +1,5 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {LogingService} from './loging.service';
+import {LogingService} from '../../services/loging.service';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {User} from '../../model/user';
 import {Subject} from 'rxjs';
@@ -38,7 +38,7 @@ export class LogingComponent implements OnInit, OnDestroy {
     this.user.password = this.loginForm.get('password').value;
     for (let i = 0; i < this.users.length; i++) {
       if (this.users.find(us => us.username === this.user.username && us.password === this.user.password)) {
-        this.logingService.logIn(true);
+        this.logingService.logIn();
         alert('You are logged');
         return;
       }

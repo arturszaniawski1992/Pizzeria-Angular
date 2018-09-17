@@ -2,7 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Order} from '../../model/order';
 import {Subject} from 'rxjs';
 import {takeUntil} from 'rxjs/operators';
-import {OrderService} from '../../shared/order.service';
+import {OrderService} from '../../services/order.service';
 
 @Component({
   selector: 'app-order-list',
@@ -22,7 +22,6 @@ export class OrderListComponent implements OnInit, OnDestroy {
       takeUntil(this.destroy$)).subscribe(orders => this.orders = orders);
     this.orderService.getOrders();
   }
-
 
   ngOnDestroy(): void {
     this.destroy$.next();

@@ -1,7 +1,7 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Dish} from '../../model/dish';
 import {ActivatedRoute} from '@angular/router';
-import {MenuService} from '../../shared/menu.service';
+import {MenuService} from '../../services/menu.service';
 import {Subject} from 'rxjs';
 import {takeUntil} from "rxjs/operators";
 
@@ -31,7 +31,7 @@ export class DishDetailComponent implements OnInit, OnDestroy {
 
   changeAvailability() {
     this.dish.isAvailable = !this.dish.isAvailable;
-    this.menuService.changeAvailability(this.dish).subscribe();
+    this.menuService.changeAvailability(this.dish).pipe(takeUntil(this.destroy$)).subscribe();
   }
 
   ngOnDestroy(): void {

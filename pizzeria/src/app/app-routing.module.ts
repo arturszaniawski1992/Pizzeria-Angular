@@ -3,7 +3,7 @@ import {Routes, RouterModule} from '@angular/router';
 import {MenuComponent} from './administratorPanel/menu/menu.component';
 import {OrderComponent} from './customerPanel/order/order.component';
 import {DishDetailComponent} from './administratorPanel/dish-detail/dish-detail.component';
-import {AuthGuardService} from './administratorPanel/loging/auth-guard.service';
+import {AuthGuardService} from './authentication/auth-guard.service';
 import {CartComponent} from './customerPanel/cart/cart.component';
 import {LogingComponent} from './administratorPanel/loging/loging.component';
 import {MenuCustomerComponent} from './customerPanel/menu-customer/menu-customer.component';

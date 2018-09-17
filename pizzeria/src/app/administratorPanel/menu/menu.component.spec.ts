@@ -4,7 +4,7 @@ import {MenuComponent} from './menu.component';
 import {RouterTestingModule} from '@angular/router/testing';
 import {HttpClientTestingModule} from '@angular/common/http/testing';
 import {NO_ERRORS_SCHEMA} from '@angular/core';
-import {MenuService} from '../../shared/menu.service';
+import {MenuService} from '../../services/menu.service';
 import {Dish} from '../../model/dish';
 import {BehaviorSubject} from 'rxjs';
 

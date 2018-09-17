@@ -2,7 +2,8 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {Subject} from 'rxjs';
 import {ActivatedRoute, Route, Router} from '@angular/router';
 import {Order} from '../../model/order';
-import {OrderService} from '../../shared/order.service';
+import {OrderService} from '../../services/order.service';
+import {takeUntil} from 'rxjs/operators';
 
 @Component({
   selector: 'app-order-list-details',
@@ -25,17 +26,17 @@ export class OrderListDetailsComponent implements OnInit, OnDestroy {
     const id = this.route.snapshot.paramMap.get('id');
     this.orderService.getOrder(+id).subscribe(order => {
       this.order = order;
-    })
+    });
   }
 
   changeOrderStatusAdopted() {
     this.order.status = 'Przyjęto do realizacji!';
-    this.orderService.changeStatusOfOrder(this.order).subscribe();
+    this.orderService.changeStatusOfOrder(this.order).pipe(takeUntil(this.destroy$)).subscribe();
   }
 
   changeOrderStatusIssued() {
     this.order.status = 'Wysłano!';
-    this.orderService.changeStatusOfOrder(this.order).subscribe();
+    this.orderService.changeStatusOfOrder(this.order).pipe(takeUntil(this.destroy$)).subscribe();
   }
 
   removeOrder() {
