@@ -2,19 +2,11 @@
   "dishes": [
     {
       "id": 11,
-      "name": "Spagetti Mushrooms",
+      "name": "Spagetti Grzybowe",
       "isAvailable": true,
-      "description": "sos kurkowo-smietanowy",
+      "description": "Sos smietanowo-kurkowy",
       "type": "spaghetti",
-      "price": "15.00"
-    },
-    {
-      "id": 12,
-      "name": "Spagetti Carbonarra",
-      "isAvailable": true,
-      "description": "Sos boloński",
-      "type": "spagetti",
-      "price": "12.00"
+      "price": "24.00"
     },
     {
       "id": 13,

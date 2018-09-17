@@ -12,5 +12,15 @@
   <td>{{dish.type}}</td>
   <td>{{dish.isAvailable}}</td>
 </table>
+<div class="edition">Zmien nazwę:
+  <input [(ngModel)]="dish.name" placeholder="name"/>
+</div>
+<div class="edition">Zmień opis:
+  <input [(ngModel)]="dish.description" placeholder="name"/>
+</div>
+<div class="edition">Zmień cenę:
+  <input [(ngModel)]="dish.price" placeholder="name"/>
+</div>
+<button class="button" (click)="editDish()">Zapisz zmiany</button>
 <button class="button" (click)="changeAvailability()">Zmień dostępność</button>
 <button class="button" [routerLink]="['/admin']">Wróc</button>

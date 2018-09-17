@@ -3,7 +3,7 @@ import {Dish} from '../../model/dish';
 import {ActivatedRoute} from '@angular/router';
 import {MenuService} from '../../services/menu.service';
 import {Subject} from 'rxjs';
-import {takeUntil} from "rxjs/operators";
+import {takeUntil} from 'rxjs/operators';
 
 
 @Component({
@@ -32,6 +32,11 @@ export class DishDetailComponent implements OnInit, OnDestroy {
   changeAvailability() {
     this.dish.isAvailable = !this.dish.isAvailable;
     this.menuService.changeAvailability(this.dish).pipe(takeUntil(this.destroy$)).subscribe();
+  }
+
+  editDish() {
+    this.menuService.editDish(this.dish).pipe(takeUntil(this.destroy$)).subscribe();
+    alert('Dish has been edited!');
   }
 
   ngOnDestroy(): void {
