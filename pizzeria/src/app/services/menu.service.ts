@@ -76,6 +76,10 @@ export class MenuService {
     );
   }
 
+  editDish(dish: Dish) {
+    return this.httpclient.put<Dish>(`http://localhost:3000/dishes/${dish.id}`, dish);
+  }
+
 
 
 }

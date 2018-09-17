@@ -3,7 +3,7 @@
     {
       "id": 11,
       "name": "Spagetti Mushrooms",
-      "isAvailable": false,
+      "isAvailable": true,
       "description": "sos kurkowo-smietanowy",
       "type": "spaghetti",
       "price": "15.00"
@@ -11,7 +11,7 @@
     {
       "id": 12,
       "name": "Spagetti Carbonarra",
-      "isAvailable": false,
+      "isAvailable": true,
       "description": "Sos boloński",
       "type": "spagetti",
       "price": "12.00"
@@ -116,21 +116,6 @@
   "orders": [
     {
       "dishesIds": [
-        11,
-        12
-      ],
-      "firstName": "Adam",
-      "lastName": "Malysz",
-      "mobile": "854656221",
-      "town": "Wisła",
-      "street": "Górska",
-      "number": "15/78",
-      "date": "2018-09-17T09:21:58.975Z",
-      "status": "Przyjęto do realizacji!",
-      "id": 3
-    },
-    {
-      "dishesIds": [
         13,
         13
       ],
@@ -143,6 +128,21 @@
       "date": "2018-09-17T10:37:16.826Z",
       "status": "Zamówienie zostało złożone!",
       "id": 4
+    },
+    {
+      "dishesIds": [
+        11,
+        12
+      ],
+      "firstName": "Henryk",
+      "lastName": "Sienkiewicz",
+      "mobile": "123456789",
+      "town": "Łódź",
+      "street": "Długa",
+      "number": "15/58",
+      "date": "2018-09-17T11:41:43.325Z",
+      "status": "Zamówienie zostało złożone!",
+      "id": 5
     }
   ],
   "users": [
