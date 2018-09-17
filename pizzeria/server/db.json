@@ -41,14 +41,6 @@
       "id": 19
     },
     {
-      "name": "Pizza Wegetarianska",
-      "isAvailable": "true",
-      "description": "same warzywa",
-      "type": "pizza",
-      "price": "15.00",
-      "id": 20
-    },
-    {
       "name": "Pizza Poznanska",
       "isAvailable": "true",
       "description": "kielbasa",

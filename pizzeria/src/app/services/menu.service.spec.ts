@@ -193,5 +193,10 @@ describe('MenuService', () => {
     // then
     expect(dish).toEqual(mockedPizza);
   });
+  it('should remove dish from menu', fakeAsync(() => {
+    // when
+    service.removeDish(mockedPizza.id);
+    mockedBackend.expectOne('http://localhost:3000/dishes/' + mockedPizza.id);
 
+  }));
 });

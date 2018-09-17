@@ -15,9 +15,6 @@ export class CartService {
   constructor() {
   }
 
-  getDishesFromCart() {
-    return this.dishesInCart;
-  }
 
   addDishToCart(dish: Dish) {
     this.dishesInCart.push(dish);
