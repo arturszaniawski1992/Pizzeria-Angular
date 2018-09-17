@@ -33,28 +33,12 @@
       "price": "10.00"
     },
     {
-      "name": "Pizza Hawajska",
-      "isAvailable": "false",
-      "description": "sos bolonski, ananas",
-      "type": "pizza",
-      "price": "25.0",
-      "id": 19
-    },
-    {
       "name": "Pizza Poznanska",
       "isAvailable": "true",
       "description": "kielbasa",
       "type": "pizza",
       "price": "25",
       "id": 21
-    },
-    {
-      "name": "Pizza Schabowa",
-      "isAvailable": "true",
-      "description": "schab pieczony, ser",
-      "type": "pizza",
-      "price": "55.50",
-      "id": 22
     },
     {
       "name": "Pizza Dobra",
@@ -104,21 +88,6 @@
       "date": "2018-09-17T10:37:16.826Z",
       "status": "Przyjęto do realizacji!",
       "id": 4
-    },
-    {
-      "dishesIds": [
-        11,
-        12
-      ],
-      "firstName": "Henryk",
-      "lastName": "Sienkiewicz",
-      "mobile": "123456789",
-      "town": "Łódź",
-      "street": "Długa",
-      "number": "15/58",
-      "date": "2018-09-17T11:41:43.325Z",
-      "status": "Wysłano!",
-      "id": 5
     },
     {
       "dishesIds": [
